@@ -1,6 +1,6 @@
 # **Trainee 2022.2**
 
-# **Nome do Blog**
+# **Jornal de Konoha**
 
 ## **Projeto Trainee, Code Jr, Grupo ?, 2022.2**
 
