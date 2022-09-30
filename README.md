@@ -2,15 +2,15 @@
 
 # **Jornal de Konoha**
 
-## **Projeto Trainee, Code Jr, Grupo ?, 2022.2**
+## **Projeto Trainee, Code Jr, Grupo 2, 2022.2**
 
 #### Desenvolvedores:
 
-*
-*
-*
-*
-*
+* Daniel Alves Andrade
+* Gabriele Leandro do Espírito Santo
+* Rafel Gomes Lopes
+* João Vitor Fernandes RIbeiro Carneiro Ramos
+* Carlos Gustavo Ferreira Rezende
 
 #### Scrum Master:
 
