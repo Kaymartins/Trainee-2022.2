@@ -8,7 +8,7 @@
 
 * Daniel Alves Andrade
 * Gabriele Leandro do Espírito Santo
-* Rafel Gomes Lopes
+* Rafael Gomes Lopes
 * João Vitor Fernandes RIbeiro Carneiro Ramos
 * Carlos Gustavo Ferreira Rezende
 
