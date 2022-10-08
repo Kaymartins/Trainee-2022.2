@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "Naruto";
+    src: url(../font/njnaruto.ttf) format("truetype");
+}
+
+.navcor {
+    background-color:#EB6D43 ;
+}
+.navlogo {
+    width: 120px;
+    height: 50px;
+}
+
+.navtexto {
+    color: #F0F0F0;
+    font-family:"Naruto";
+}
+
+.navtexto:hover {
+    color: #1F6EC9;
+}
+
+footer {
+    background-color: #EB6D43;
+    text-align: center;
+    color: #F0F0F0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.socialimg {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding-right: 0px;
+}
