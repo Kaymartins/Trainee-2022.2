@@ -1,0 +1,207 @@
+html {  
+    text-decoration: none;
+}
+
+body{
+    background: #1F6EC9;
+}
+a
+{
+    text-decoration: none;
+    
+}
+
+.mais{
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'MyFamily';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.navigation{  
+    color: rgb(0, 0, 0);
+}
+
+.navigation ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    list-style: none;
+    gap: 70px;
+    
+}
+
+.navigation li{
+    align-items: flex-end;
+    line-height: 50px;
+    margin-bottom: -25px;
+}
+
+.navigation ul img{
+    margin-left: -25px;
+
+}
+.carousel{
+    width:100%;
+    background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-item {
+    height: 500px;
+    width: 100%;
+    background: center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption h1{
+    background-color: #272226f3;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.carousel-caption p{
+    background-color: #272226f3;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.card{
+    background-color: rgb(214, 214, 214);
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 155px;
+}
+
+.card img{
+    width: 250px;
+    height: 150px;
+
+}
+
+.card p{
+
+    width: 690px;
+    height: 100px;
+    
+}
+
+.creditos{
+    height: 110px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+}
+
+.creditos a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover{
+    text-shadow: 5px 5px 5px black;
+}
+
+.bg{
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+	
+  background: -webkit-repeating-linear-gradient(
+    145deg,
+    #eed600 1px,
+    #eed600 2px,
+    #eed600 11px,
+    #f57804 2px,
+    #f57804 2px,
+  );
+  background: repeating-linear-gradient(
+    -55deg,
+    #f57804 1px,
+    #f57804 2px,
+    #f57804 11px,
+    #eed600 12px,
+    #eed600 20px
+	);
+    
+    -webkit-animation-name: MOVE-BG;
+	-webkit-animation-duration: .6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	
+    animation-name: MOVE-BG;
+	animation-duration: .6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    
+}
+
+.loading {
+	height: auto;
+    text-align: center;
+    color: #1F6EC9;	
+    position: relative;
+    overflow: hidden;
+	padding: 1rem;
+	margin: 0;
+	font-style: italic;
+}
+
+
+@-webkit-keyframes MOVE-BG {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to { 
+		-webkit-transform: translateX(46px);
+	}
+}
+
+@keyframes MOVE-BG {
+	from {
+		transform: translateX(0);
+	}
+	to { 
+		transform: translateX(46px);
+	}
+}
+
+@font-face {
+    font-family: "MyFamily";
+    src: url("../font/njnaruto.ttf") format("truetype");
+}
+@media (max-width:1185px){
+    .card p{
+        width: 500px;
+        height: 100px;
+    }
+}
+
+@media (max-width:930px){
+    .creditos {
+        display: none
+      }
+}
+
+@media (max-width: 785px){
+    .desc{
+        font-size: 10px;
+
+        max-width: fit-content;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    
+}
