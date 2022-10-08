@@ -1,6 +1,6 @@
 
 body {
-    background-color: #1F6EC9;
+    background-color: #F0F0F0;
     font-family: arial;
 }
 
@@ -14,16 +14,19 @@ body {
 }
 
 .titulo-post h1 {
+    color: #EB6D43;
     font-size: auto;
-    margin-bottom: -10px;
+    margin-bottom: 0;
 }
 
 .titulo-post h2{
+    color: #0D3C5A;
     font-size: 20px;
     font-weight: 200;
 }
 
 .titulo-post div {
+    vertical-align: center;
     margin-top: 10px;
     display: inline-block;
     margin-bottom: 5px;
@@ -38,8 +41,23 @@ body {
     border-radius: 50px;
 }
 
+.information-usuario {
+    vertical-align: bottom;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
 .conteudo {
+    border-top: 2px solid #1F6EC9;
+    border-bottom: 2px solid #1F6EC9;
     margin-right: 25%;
+    text-align: justify;
+}
+
+.conteudo img {
+    margin-top: 5px;
 }
 
 .conteudo p {
@@ -47,11 +65,38 @@ body {
     margin-bottom: 30px;
 }
 
+.conteudo span {
+    color: #EB6D43;
+    font-weight: bolder;
+}
+
+.container {
+    padding-left: 0px;
+}
+
 .conteudo h3 {
+    color: #0D3C5A;
     margin-top: 40px;
 }
 
 .conteudo h4 {
+    color: #0D3C5A;
     margin-top: 40px;
     margin-bottom: -15px;
+}
+
+.sinopse {
+    font-weight: 100;
+}
+
+
+@media (max-width: 1000px) {
+
+
+
+
+
+
+
+
 }
