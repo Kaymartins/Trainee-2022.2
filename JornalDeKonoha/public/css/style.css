@@ -92,8 +92,13 @@ body {
 
 @media (max-width: 1000px) {
 
+.titulo-post div{
+    display: block;
+}
 
-
+.information-usuario {
+    margin-left: auto;
+}
 
 
 
