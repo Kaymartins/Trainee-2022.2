@@ -1,0 +1,41 @@
+
+body {
+    background-color: #1F6EC9;
+    font-family: arial;
+}
+
+.main {
+    background-color: white;
+    padding: 80px 180px 80px 100px;
+}
+
+.titulo-post {
+    text-align: left;
+    background-color: red;
+}
+
+.titulo-post h1 {
+    font-size: auto;
+    margin-bottom: -10px;
+}
+
+.titulo-post h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.titulo-post div {
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.usuario-pic {
+    background-color: yellow;
+    margin-bottom: 40px;
+}
+
+.usuario-pic img {
+    width: 50px;
+    border-radius: 50px;
+}
