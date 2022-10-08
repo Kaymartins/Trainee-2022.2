@@ -5,13 +5,12 @@ body {
 }
 
 .main {
-    background-color: white;
     padding: 80px 180px 80px 100px;
 }
 
 .titulo-post {
     text-align: left;
-    background-color: red;
+    margin-right: 10%;
 }
 
 .titulo-post h1 {
@@ -31,11 +30,28 @@ body {
 }
 
 .usuario-pic {
-    background-color: yellow;
     margin-bottom: 40px;
 }
 
 .usuario-pic img {
     width: 50px;
     border-radius: 50px;
+}
+
+.conteudo {
+    margin-right: 25%;
+}
+
+.conteudo p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.conteudo h3 {
+    margin-top: 40px;
+}
+
+.conteudo h4 {
+    margin-top: 40px;
+    margin-bottom: -15px;
 }
