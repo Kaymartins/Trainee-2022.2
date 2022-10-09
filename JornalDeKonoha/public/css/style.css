@@ -56,8 +56,10 @@ body {
     text-align: justify;
 }
 
-.conteudo img {
+.img-principal {
     margin-top: 5px;
+    text-align: center;
+    margin-right: 2%;
 }
 
 .conteudo p {
@@ -126,6 +128,12 @@ body {
 
 .conteudo {
     width: 100%;
+}
+
+.img-principal {
+    width: 95%;
+    text-align: center;
+    margin-left: 1%;
 }
 
 .conteudo img {
