@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-    padding: 80px 180px 80px 100px;
+    padding: 60px 180px 60px 100px;
 }
 
 .titulo-post {
@@ -94,7 +94,7 @@ body {
 @media (max-width: 1000px) {
 
     .main {
-        padding: 80px 40px;
+        padding: 60px 40px;
     }
 
     .titulo-post {
