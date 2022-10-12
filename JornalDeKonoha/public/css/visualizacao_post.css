@@ -4,24 +4,25 @@ body {
 }
 
 .main {
-    padding: 60px 180px 60px 100px;
+    padding: 60px 100px;
 }
 
 .titulo-post {
     text-align: left;
-    margin-right: 10%;
 }
 
 .titulo-post h1 {
     color: #EB6D43;
     font-size: auto;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .titulo-post h2 {
     color: #0D3C5A;
     font-size: 20px;
     font-weight: 200;
+    text-align: center;
 }
 
 .titulo-post div {
@@ -29,6 +30,10 @@ body {
     margin-top: 10px;
     display: inline-block;
     margin-bottom: 5px;
+}
+
+.titulo-usuario {
+    margin-left: 3%;
 }
 
 .usuario-pic {
@@ -51,8 +56,9 @@ body {
 .conteudo {
     border-top: 2px solid #1F6EC9;
     border-bottom: 2px solid #1F6EC9;
-    margin-right: 25%;
     text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .img-principal {
@@ -110,6 +116,7 @@ body {
 
     .titulo-usuario {
         width: 200px;
+        margin-left: 0;
     }
 
     .usuario-pic {
@@ -123,6 +130,8 @@ body {
 
     .conteudo {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .img-principal {
