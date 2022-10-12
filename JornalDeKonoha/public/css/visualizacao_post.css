@@ -71,10 +71,6 @@ body {
     font-weight: bolder;
 }
 
-.container {
-    padding-left: 0px;
-}
-
 .conteudo h3 {
     color: #0D3C5A;
     margin-top: 40px;
@@ -152,5 +148,4 @@ body {
     .conteudo h4 {
         font-size: 18px;
     }
-
 }
