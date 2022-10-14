@@ -47,6 +47,23 @@ body {
     margin-left: 20%;
 }
 
-.numeracao {
-    text-align: center;
+@media (max-width: 1024px) {
+    
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 2%;
+    }
+
+    .but-add {
+        margin-top: 40px;
+    }
+
+    .tabela {
+        margin-left: 2.5%;
+    }
+
+    .botao {
+        margin-left: 1%;
+    }
 }
