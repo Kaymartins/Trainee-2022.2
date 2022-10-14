@@ -1,0 +1,26 @@
+
+body {
+    padding: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.but-add {
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.tabela {
+    margin-left: 3%;
+    width: 90%;
+}
+
+.barra-guia {
+    background-color: #1F6EC9;
+}
