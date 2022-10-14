@@ -1,0 +1,16 @@
+
+body {
+    background-color: blue;
+    margin-top: 150px;
+    padding-left: 32%;
+    padding-right: 32%;
+}
+
+.formulario {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+}
