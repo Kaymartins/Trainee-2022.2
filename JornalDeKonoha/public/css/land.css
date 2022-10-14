@@ -8,7 +8,6 @@ body{
 a
 {
     text-decoration: none;
-    
 }
 
 .mais{
@@ -17,8 +16,16 @@ a
     font-family: 'MyFamily';
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+.maisantigas    {
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'MyFamily';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    width: 5px;
+}
 .navigation{  
     color: rgb(0, 0, 0);
+    border-radius: 15px;
 }
 
 .navigation ul {
@@ -33,44 +40,55 @@ a
 
 .navigation li{
     align-items: flex-end;
-    line-height: 50px;
+    line-height: 40px;
     margin-bottom: -25px;
+    font-size: 18px;
 }
 
 .navigation ul img{
     margin-left: -25px;
 
 }
-.carousel{
-    width:100%;
-    background-color: red;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.carrossel{
+    
+
 }
-.carousel-item {
-    height: 500px;
+
+.carrossel-inner{
+    height: 400px;
+
+    
+}
+
+.carrossel-item {
+    
+    
+    
+   
+    
+}
+
+.carrossel-item img{
+    height: 100%;
     width: 100%;
-    background: center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
-
-.carousel-caption h1{
+.carrossel-caption{
+    margin-bottom: 50px;
+}
+.carrossel-caption h1{
     background-color: #272226f3;
     text-align: left;
     padding-left: 35px;
 }
 
-.carousel-caption p{
+.carrossel-caption p{
     background-color: #272226f3;
     text-align: left;
     padding-left: 35px;
 }
 
-.card{
+.cards{
     background-color: rgb(214, 214, 214);
     margin-top: 5px;
     display:flex;
@@ -79,15 +97,31 @@ a
     max-height: 155px;
 }
 
-.card img{
+.cards img{
     width: 250px;
     height: 150px;
 
 }
 
-.card p{
+.new-img{
+    width: 300px;
+    height: 100%;
 
-    width: 690px;
+}
+
+.new-card{
+    background-color: rgb(230, 230, 230);
+}
+
+.nome-cred{
+    font-weight: bold;
+    color: #1F6EC9
+}
+
+.area-botao{
+    width: 40%;
+}
+.cards p{
     height: 100px;
     
 }
@@ -99,10 +133,6 @@ a
     flex-direction: column;
 }
 
-.creditos a{
-    font-size: 15px;
-    font-weight: bold;
-}
 
 a:hover{
     text-shadow: 5px 5px 5px black;
@@ -115,6 +145,7 @@ a:hover{
     top: 0;
     bottom: 0;
     z-index: -1;
+    
 	
   background: -webkit-repeating-linear-gradient(
     145deg,
@@ -179,29 +210,57 @@ a:hover{
     font-family: "MyFamily";
     src: url("../font/njnaruto.ttf") format("truetype");
 }
-@media (max-width:1185px){
-    .card p{
-        width: 500px;
-        height: 100px;
+
+
+@media (max-width:870px){
+
+
+
+
+}
+
+@media (max-width:715px){
+    .carrossel-inner img{
+        margin-top: 80px;
     }
 }
 
-@media (max-width:930px){
-    .creditos {
-        display: none
-      }
+@media (max-width: 550px){
+    .area-botao{
+        width: 50%;
+    }
 }
 
-@media (max-width: 785px){
-    .desc{
-        font-size: 10px;
+@media (max-width: 435px){
+    .area-botao{
+        width: 80%;
+    }
+}
 
-        max-width: fit-content;
+@media (max-width: 283px){
+    h1{
+        margin: 0px;
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
     }
 
-    h4{
-        font-size: 15px;
+    button{
+        max-height: 280px;
+    }
+    .carrossel-inner{
+        height: auto;
     }
 
-    
+    .carrossel-inner img{
+        margin-top: 30px;
+        height: 50%;
+    }
+    .carrossel-item{
+        max-height: 280px; 
+    }
+    .area-botao{
+        width: 100%;
+    }
 }
