@@ -38,3 +38,20 @@ i{
     background-color: #0D3C5A;
     color:aliceblue;
 }
+
+.user{
+    position: absolute;
+    bottom: 20px;
+    width: 367px;
+}
+
+.botao{
+    background-color: #EB6D43;
+    width: 45px;
+}
+
+.user p{
+    font-size: 13px;
+    margin-top: -25px;
+    margin-left: 45px;
+}

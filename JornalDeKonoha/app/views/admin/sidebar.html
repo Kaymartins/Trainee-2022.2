@@ -14,18 +14,27 @@
     <title>Sidebar</title>
 </head>
 <body>
-    <div id="offcanvasExample" class="offcanvas offcanvas-start show barralat" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Jornal de Konoha</h5>
-          <button style="color: aliceblue;" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul>
-            <a href="#"><li><i class="bi bi-speedometer"></i>Dashboard</li></a>
-            <a href="#"><li><i class="bi bi-pencil-fill"></i>Posts</li></a>
-            <a href="#"><li><i class="bi bi-person-fill"></i>Usuários</li></a>
-          </ul>
-        </div>
+  
+  <a class="btn botao" data-bs-toggle="offcanvas" href="#offcanvasExample" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    <i class="bi bi-play-fill"></i>
+  </a>
+  <div id="offcanvasExample" class="offcanvas offcanvas-start barralat" tabindex="-1" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Jornal de Konoha</h5>
+      <button style="color: aliceblue;" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    <div class="offcanvas-body">
+      <ul>
+        <a href="#"><li><i class="bi bi-speedometer"></i>Dashboard</li></a>
+        <a href="#"><li><i class="bi bi-pencil-fill"></i>Posts</li></a>
+        <a href="#"><li><i class="bi bi-person-fill"></i>Usuários</li></a>
+        <div class="user">        
+          <a style="text-decoration: none;" href="#"><li><i class="bi bi-power"></i>Logout</li></a>
+          <p>Fulano de Tal</p>
+        </div>
+      </ul>
+      
+    </div>
+  </div>
 </body>
 </html>
