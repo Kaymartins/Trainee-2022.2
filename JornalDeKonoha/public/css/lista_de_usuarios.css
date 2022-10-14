@@ -1,6 +1,19 @@
 
 body {
     padding: 5%;
+    background-color: #F0F0F0;
+    font-family: arial;
+}
+
+.titulo {
+    margin-left: 4%;
+    color: #EB6D43;
+}
+
+.but-add {
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -8,12 +21,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-}
-
-.but-add {
-    margin-top: 100px;
-    margin-left: 5%;
-    margin-bottom: 20px;
 }
 
 .tabela {
@@ -36,6 +43,7 @@ body {
 .botao {
     display: flex;
     gap: 5px;
+    margin-left: 20%;
 }
 
 .numeracao {
