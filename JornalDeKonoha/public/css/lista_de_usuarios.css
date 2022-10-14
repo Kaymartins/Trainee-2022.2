@@ -24,3 +24,20 @@ body {
 .barra-guia {
     background-color: #1F6EC9;
 }
+
+.col-num {
+    width: 8%;
+}
+
+.col-nome {
+    width: 70%;
+}
+
+.botao {
+    display: flex;
+    gap: 5px;
+}
+
+.numeracao {
+    text-align: center;
+}
