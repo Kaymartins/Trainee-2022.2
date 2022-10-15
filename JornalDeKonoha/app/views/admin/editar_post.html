@@ -21,13 +21,15 @@
                 <button type="button" class="btn btn-success" title="Confirmar"><i class="bi bi-check-lg"></i></button>
                 <button type="button" class="btn btn-secondary" title="Voltar"><i class="bi bi-arrow-left"></i></button>
             </div>
-            <div class="mb-3">
+            <div>
                 <input class="form-control titulo" type="text" value="Título entra aqui">
-                <input class="form-control titulo" type="text" value="Data">
+                <input class="form-control titulo" type="date" value="2022-10-15">
                 <input class="form-control titulo" type="text" value="Autor">
                 <img src="../../../public/img/chainsaw.png">
-                <button type="button" class="btn btn-success" title="Nova imagem"><i class="bi bi-capslock-fill"></i></button>
-                <button type="button" class="btn btn-danger" title="Excluir imagem"><i class="bi bi-x-lg"></i></button>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Mudar imagem</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
                 <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1" rows="8">Teste</textarea>
             </div>
         </div>
