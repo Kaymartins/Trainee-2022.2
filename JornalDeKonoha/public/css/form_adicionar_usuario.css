@@ -1,5 +1,6 @@
 
 body {
+    background-color: #F0F0F0;
     margin-top: 155px;
     padding-left: 32%;
     padding-right: 32%;
@@ -33,7 +34,6 @@ body {
     }
 
     .formulario {
-        background-color: white;
         width: auto;
         height: auto;
     }
