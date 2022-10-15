@@ -17,9 +17,16 @@
 
     <form>
         <div class="border border-success p-2 mb-2 rounded">
+            <div class="botao">
+                <button type="button" class="btn btn-danger" title="Excluir"><i class="bi bi-x-lg"></i></button>
+                <button type="button" class="btn btn-success" title="Editar"><i class="bi bi-pencil-fill"></i></button>
+                <button type="button" class="btn btn-secondary" title="Voltar"><i class="bi bi-arrow-left"></i></button>
+            </div>
             <div class="mb-3">
-                <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
-                <input class="form-control" type="textarea" rows="10" value="Readonly input here..." aria-label="readonly input example" readonly>
+                <input class="form-control-plaintext" type="text" value="Título entra aqui" 
+                aria-label="readonly input example" readonly>
+                (imagem vai entrar aqui)
+                <textarea class="form-control" value="" id="exampleFormControlTextarea1" rows="10" readonly></textarea>
             </div>
         </div>
     </form>

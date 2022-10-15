@@ -14,7 +14,7 @@ form {
     height: 97px;
 }
 
-.botoes {
+.botao {
     display: flex;
     gap: 5px;
     flex-direction: row-reverse;
