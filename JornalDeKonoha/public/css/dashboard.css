@@ -1,0 +1,41 @@
+body {
+    background-color: #F0F0F0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo>img {
+    width: 20%;
+    margin-top: 7%;
+}
+
+.cards {
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    margin-top: 7%;
+}
+
+.card-img-top {
+    width:40px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.button-left {
+    box-align: center;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    text-align: center;
+}
