@@ -1,6 +1,6 @@
 body {
-    margin-top: 40px;
-    padding-left: 32%;
+    margin-top: 100px;
+    padding-left: 37%;
     padding-right: 32%;
 }
 
@@ -10,6 +10,12 @@ form {
     flex-direction: column;
     justify-content: center;
     padding-top: 5px;
-    width: 500px;
-    height: 528px;
+    width: 350px;
+    height: 97px;
+}
+
+.botoes {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
 }
