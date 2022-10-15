@@ -1,5 +1,5 @@
 body {
-    margin-top: 40px;
+    margin-top: 30px;
     padding-left: 20%;
     padding-right: 32%;
 }
@@ -11,7 +11,20 @@ form {
     justify-content: center;
     padding-top: 5px;
     width: 800px;
-    height: 528px;
+    height: 577px;
+}
+
+img {
+    width: 600px;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 200px;
+}
+
+
+.titulo {
+    margin-top: 5px;
 }
 
 .botao {
