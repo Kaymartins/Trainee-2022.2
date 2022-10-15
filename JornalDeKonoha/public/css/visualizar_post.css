@@ -4,7 +4,7 @@ body {
     padding-right: 32%;
 }
 
-form {
+.formulario {
     background-color: #F0F0F0;
     display: flex;
     flex-direction: column;
@@ -12,10 +12,4 @@ form {
     padding-top: 5px;
     width: 500px;
     height: 528px;
-}
-
-.botoes {
-    display: flex;
-    gap: 5px;
-    flex-direction: row-reverse;
 }
