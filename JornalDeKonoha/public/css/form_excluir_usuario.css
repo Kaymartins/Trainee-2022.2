@@ -16,6 +16,10 @@ body {
     height: 314px;
 }
 
+.pergunta {
+    text-align: justify;
+}
+
 .botoes {
     margin-top: 30px;
     display: flex;
