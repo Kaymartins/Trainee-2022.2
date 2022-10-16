@@ -1,6 +1,6 @@
 body {
     margin-top: 100px;
-    padding-left: 37%;
+    padding-left: 32%;
     padding-right: 32%;
 }
 
@@ -22,10 +22,5 @@ form {
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 10px;
-    }
-
-   form {
-        width: auto;
-        height: auto;
     }
 }

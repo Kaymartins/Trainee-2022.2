@@ -17,7 +17,6 @@ img {
     padding-left: 200px;
 }
 
-
 .titulo {
     margin-top: 5px;
 }
@@ -48,5 +47,15 @@ img {
    form {
         width: auto;
         height: auto;
+    }
+}
+@media (max-width: 440px) {
+    
+    img {
+        width: 95%;
+        height: 95%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 8px;
     }
 }

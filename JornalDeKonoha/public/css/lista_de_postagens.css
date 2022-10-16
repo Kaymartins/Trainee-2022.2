@@ -51,8 +51,12 @@ body {
     margin-left: 18%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     
+    body{
+        padding: 0;
+    }
+
     .titulo {
         margin-left: 0;
         text-align: center;
@@ -64,10 +68,10 @@ body {
     }
 
     .tabela {
-        margin-left: 2.5%;
+        margin-left: 0;
     }
 
     .botao {
-        margin-left: 1%;
+        margin-left: 0;
     }
 }
