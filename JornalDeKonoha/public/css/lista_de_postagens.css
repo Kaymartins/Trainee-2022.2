@@ -38,13 +38,17 @@ body {
 }
 
 .col-post {
-    width: 70%;
+    width: 52%;
+}
+
+.col-autor{
+    width: 18%
 }
 
 .botao {
     display: flex;
     gap: 5px;
-    margin-left: 20%;
+    margin-left: 18%;
 }
 
 @media (max-width: 1024px) {

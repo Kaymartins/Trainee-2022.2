@@ -27,3 +27,26 @@ img {
     gap: 5px;
     flex-direction: row-reverse;
 }
+
+@media (max-width: 1024px) {
+
+    body {
+        margin-top: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+    }
+
+    img {
+        width: 380px;
+        height: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 2px;
+    }
+
+   form {
+        width: auto;
+        height: auto;
+    }
+}
