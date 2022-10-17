@@ -4,7 +4,6 @@ html {
 
 ul{
     list-style: none;
-    
     margin: 0;
     padding: 0;
 }
@@ -17,23 +16,21 @@ ul li{
     padding: 10px;
     font-weight: bold;
     left: 0;
-    
-    
 }
 
-ul li:hover{
+.botao a:hover{
     transition: 0.5s;
-    background-color: #EB6D43;
-    
+    background-color: #ffffff;
 }
 
 a{
     text-decoration: none;
 }
 
-i{
-    margin-right: 20px;
+.icon{
+    margin-right: 18px;
 }
+
 .barralat{
     background-color: #0D3C5A;
     color:aliceblue;
@@ -43,15 +40,26 @@ i{
     position: absolute;
     bottom: 20px;
     width: 367px;
+    align-items: center;
 }
 
 .botao{
     background-color: #EB6D43;
-    width: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0%;
+}
+
+
+ul li:hover{
+    transition: 0.5s;
+    background-color: #EB6D43;
 }
 
 .user p{
     font-size: 13px;
-    margin-top: -25px;
+    margin-top: -30px;
     margin-left: 45px;
+    max-width: max-content;
 }

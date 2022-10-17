@@ -14,10 +14,11 @@
     <title>Sidebar</title>
 </head>
 <body>
-  
-  <a class="btn botao" data-bs-toggle="offcanvas" href="#offcanvasExample" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-    <i class="bi bi-play-fill"></i>
-  </a>
+  <div class="botao">
+    <a class="btn d-flex justify-content-center" data-bs-toggle="offcanvas" href="#offcanvasExample" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <i class="bi bi-play-fill"></i>
+    </a>
+  </div>
   <div id="offcanvasExample" class="offcanvas offcanvas-start barralat" tabindex="-1" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasLabel">Jornal de Konoha</h5>
@@ -25,11 +26,11 @@
     </div>
     <div class="offcanvas-body">
       <ul>
-        <a href="#"><li><i class="bi bi-speedometer"></i>Dashboard</li></a>
-        <a href="#"><li><i class="bi bi-pencil-fill"></i>Posts</li></a>
-        <a href="#"><li><i class="bi bi-person-fill"></i>Usuários</li></a>
+        <a href="#"><li><i class="bi bi-speedometer icon"></i>Dashboard</li></a>
+        <a href="#"><li><i class="bi bi-pencil-fill icon"></i>Posts</li></a>
+        <a href="#"><li><i class="bi bi-person-fill icon"></i>Usuários</li></a>
         <div class="user">        
-          <a style="text-decoration: none;" href="#"><li><i class="bi bi-power"></i>Logout</li></a>
+          <a style="text-decoration: none;" href="#"><li><i class="bi bi-power icon"></i>Logout</li></a>
           <p>Fulano de Tal</p>
         </div>
       </ul>
