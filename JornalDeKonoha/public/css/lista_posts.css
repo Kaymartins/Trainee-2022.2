@@ -6,9 +6,10 @@
 
 .navigation {
     background-color: green;
-    width: 83.5%;
     display: flex;
     justify-content: end;
+    margin-right: 17%;
+    margin-left: 17%;
 }
 
 .card-vertical {
@@ -16,10 +17,20 @@
     display: flex;
     justify-content: center;
     gap: 1%;
+    margin-right: 17%;
+    margin-left: 17%;
 }
 
 .card-horizontal {
+    padding-top: 1rem;
     background-color: red;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+.cards-hor {
+    width: 90%;
 }
