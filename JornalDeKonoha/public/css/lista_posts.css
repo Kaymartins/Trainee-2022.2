@@ -1,8 +1,25 @@
+
 .main {
     background-color: aqua;
+    padding: 5%;
+}
+
+.navigation {
+    background-color: green;
+    width: 83.5%;
+    display: flex;
+    justify-content: end;
 }
 
 .card-vertical {
     background-color: yellow;
     display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.card-horizontal {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
