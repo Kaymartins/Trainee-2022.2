@@ -1,19 +1,22 @@
 
 .main {
-    background-color: aqua;
+    background-color: #272226;
     padding: 5%;
 }
 
 .navigation {
-    background-color: green;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     margin-right: 17%;
     margin-left: 17%;
 }
 
+.titulo {
+    color: #F0F0F0;
+}
+
 .card-vertical {
-    background-color: yellow;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
     gap: 1%;
@@ -23,7 +26,6 @@
 
 .card-horizontal {
     padding-top: 1rem;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,5 +34,5 @@
 }
 
 .cards-hor {
-    width: 90%;
+    width: fit-content;
 }
