@@ -1,0 +1,8 @@
+.main {
+    background-color: aqua;
+}
+
+.card-vertical {
+    background-color: yellow;
+    display: flex;
+}
