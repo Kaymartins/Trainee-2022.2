@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    background: #1F6EC9;
+    background: #272226;
 }
 a
 {
@@ -99,6 +99,7 @@ a
 .new-card{
     background-color: rgb(230, 230, 230);
 }
+
 
 .nome-cred{
     font-weight: bold;
