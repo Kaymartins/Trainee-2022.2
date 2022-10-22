@@ -38,6 +38,10 @@
     margin-left: 17%;
 }
 
+.card-horizontal span {
+    color: #1F6EC9;
+}
+
 .mais{
     text-decoration: none;
     color: #1F6EC9;
@@ -51,4 +55,25 @@
 
 .cards-hor {
     width: fit-content;
+}
+
+
+@media (max-width: 1024px) {
+
+    .navigation {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card-vertical {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+    }
+
+    .card-horizontal {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
