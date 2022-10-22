@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: 'Naruto';
+    src: url('../font/ninja_naruto/njnaruto.ttf') format('truetype');
+}
+
 .main {
     background-color: #272226;
     padding: 5%;
@@ -31,6 +36,17 @@
     align-items: center;
     margin-right: 17%;
     margin-left: 17%;
+}
+
+.mais{
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'Naruto';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.cards-ver {
+    width: fit-content;
 }
 
 .cards-hor {
