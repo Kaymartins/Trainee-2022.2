@@ -1,0 +1,288 @@
+html {  
+    text-decoration: none;
+}
+
+body{
+    background: #272226;
+}
+a
+{
+    text-decoration: none;
+}
+
+.mais{
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'MyFamily';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.maisantigas    {
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'MyFamily';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    width: 5px;
+}
+.navigation{  
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.navigation ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    list-style: none;
+    gap: 70px;
+    
+}
+
+.navigation li{
+    align-items: flex-end;
+    line-height: 40px;
+    margin-bottom: -25px;
+    font-size: 18px;
+}
+
+.navigation ul img{
+    margin-left: -25px;
+
+}
+
+.carrossel-inner{
+    max-height: 500px;
+}
+
+.carrossel-item img{
+    width: 100%;
+}
+
+.carrossel-caption{
+    position: absolute;
+    width: 800px;
+}
+.carrossel-caption h1{
+    background-color: #272226f3;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.carrossel-caption p{
+   
+    background-color: #272226f3;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.cards{
+    background-color: rgb(214, 214, 214);
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 155px;
+}
+
+.cards img{
+    width: 250px;
+    height: 150px;
+
+}
+
+.new-img{
+    width: 300px;
+    height: 100%;
+
+}
+
+.new-card{
+    background-color: rgb(230, 230, 230);
+}
+
+
+.nome-cred{
+    font-weight: bold;
+    color: #1F6EC9
+}
+
+.area-botao{
+    width: 40%;
+}
+.cards p{
+    height: 100px;
+    
+}
+
+.creditos{
+    height: 110px;
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+a:hover{
+    text-shadow: 5px 5px 5px black;
+}
+
+.bg{
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    
+	
+  background: -webkit-repeating-linear-gradient(
+    145deg,
+    #eed600 1px,
+    #eed600 2px,
+    #eed600 11px,
+    #f57804 2px,
+    #f57804 2px,
+  );
+  background: repeating-linear-gradient(
+    -55deg,
+    #f57804 1px,
+    #f57804 2px,
+    #f57804 11px,
+    #eed600 12px,
+    #eed600 20px
+	);
+    
+    -webkit-animation-name: MOVE-BG;
+	-webkit-animation-duration: .6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	
+    animation-name: MOVE-BG;
+	animation-duration: .6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    
+}
+
+.loading {
+	height: auto;
+    text-align: center;
+    color: #1F6EC9;	
+    position: relative;
+    overflow: hidden;
+	padding: 1rem;
+	margin: 0;
+	font-style: italic;
+}
+
+
+@-webkit-keyframes MOVE-BG {
+	from {
+		-webkit-transform: translateX(0);
+	}
+	to { 
+		-webkit-transform: translateX(46px);
+	}
+}
+
+@keyframes MOVE-BG {
+	from {
+		transform: translateX(0);
+	}
+	to { 
+		transform: translateX(46px);
+	}
+}
+
+@font-face {
+    font-family: "MyFamily";
+    src: url("../font/njnaruto.ttf") format("truetype");
+}
+
+@media(max-width: 1075px){
+    .carrossel-caption{
+        position: absolute;
+        top: 275px;
+        width: 80%;
+    }
+}
+
+@media(max-width: 830px){
+    .carrossel-caption{
+        position: absolute;
+        top: 280px;
+    }
+}
+
+/*@media(max-width: 572px){
+    .carrossel-caption{
+        position: absolute;
+        top: 180px;
+    }
+}*/
+
+@media(max-width:768px){
+    .carrossel-caption{
+        position: absolute;
+        top: 180px;
+    }
+
+    .carrossel-caption h1{
+        font-size: 20px;
+    }
+
+    .carrossel-caption p{
+        font-size: 12px;
+    }
+
+    .ctrl{
+        max-height: 250px;
+    }
+    .carrossel-item{
+        max-height: 300px;
+    }
+    .carrossel-inner{
+        max-height: 300px;
+    }
+
+    .area-botao{
+        width: 100%;
+    }
+}
+
+@media (max-width:570px){
+    .carrossel-caption p{
+        display: none;
+    }
+}
+
+@media(max-width:510px){
+    .carrossel-caption {
+        position: absolute;
+        top: 150px;
+    }
+}
+
+@media(max-width:440px){
+    .carrossel-caption{
+        display: none;
+    }
+
+    .ctrl{
+        max-height: 250px;
+    }
+    .carrossel-item{
+        max-height: 100%;
+    }
+    .carrossel-inner{
+        max-height: 300px;
+    }
+
+    .area-botao{
+        width: 100%;
+    }
+}
+
+
+
+
