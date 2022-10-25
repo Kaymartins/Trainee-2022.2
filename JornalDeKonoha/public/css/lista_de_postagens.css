@@ -8,6 +8,8 @@ body {
     color: #EB6D43;
 }
 
+
+
 .but-add {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -22,12 +24,21 @@ body {
     color: #F0F0F0;
 }
 
+<<<<<<< HEAD:JornalDeKonoha/public/css/lista_de_usuarios.css
 .col-num {
     width: 12%;
+=======
+.col-data {
+    width: 8%;
+>>>>>>> main:JornalDeKonoha/public/css/lista_de_postagens.css
 }
 
-.col-nome {
-    width: 70%;
+.col-post {
+    width: 52%;
+}
+
+.col-autor{
+    width: 18%
 }
 
 .botao {
@@ -36,8 +47,12 @@ body {
     margin-left: 20%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     
+    body{
+        padding: 0;
+    }
+
     .titulo {
         margin-left: 0;
         text-align: center;
