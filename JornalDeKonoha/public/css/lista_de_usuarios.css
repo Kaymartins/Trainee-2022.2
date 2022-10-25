@@ -8,8 +8,6 @@ body {
     color: #EB6D43;
 }
 
-
-
 .but-add {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -24,16 +22,12 @@ body {
     color: #F0F0F0;
 }
 
-.col-data {
-    width: 8%;
+.col-num {
+    width: 12%;
 }
 
-.col-post {
-    width: 52%;
-}
-
-.col-autor{
-    width: 18%
+.col-nome {
+    width: 70%;
 }
 
 .botao {
@@ -42,12 +36,8 @@ body {
     margin-left: 20%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     
-    body{
-        padding: 0;
-    }
-
     .titulo {
         margin-left: 0;
         text-align: center;
