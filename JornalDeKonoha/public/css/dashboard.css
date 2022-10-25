@@ -1,5 +1,5 @@
 body {
-    background-color: #F0F0F0;
+    background-color: #272626;
 }
 
 .logo {
@@ -21,21 +21,46 @@ body {
     margin-top: 7%;
 }
 
-.card-img-top{
+.card-posts{
+    width:40px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.card-user{
+    width:40px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.card-logout{
     width:40px;
     margin: 0 auto;
     margin-top: 10px;
 }
 
-.button-left {
+.botao-posts {
     box-align: center;
 }
-.card-title{
+.titulo-posts{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.btn {
-    text-align: center;
+.titulo-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.botao-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
