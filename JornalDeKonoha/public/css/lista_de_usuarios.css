@@ -36,6 +36,41 @@ body {
     margin-left: 20%;
 }
 
+.fade-modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    pointer-events: all;
+}
+
+.modal-p{
+    position: fixed;
+    width: 900px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+}
+
+.modal-head{
+    color: #f0f0f0;
+}
+
+.modal-corpo{
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+.hide{
+    opacity:0;
+    top:0;
+    pointer-events: none;
+}
 @media (max-width: 1024px) {
     
     .titulo {
@@ -56,3 +91,4 @@ body {
         margin-left: 0;
     }
 }
+
