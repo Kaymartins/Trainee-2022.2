@@ -1,15 +1,13 @@
 body {
     background-color: #272626;
-}
-
-.logo {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo>img {
-    width: 350px;
-    margin-top: 7%;
+    width: 400px;
+    margin-top: 40%;
 }
 
 .cards {
