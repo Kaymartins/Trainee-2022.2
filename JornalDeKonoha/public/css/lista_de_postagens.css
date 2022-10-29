@@ -42,6 +42,47 @@ body {
     margin-left: 20%;
 }
 
+.botao-forms{
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+.fade-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    pointer-events: all;
+}
+
+.modal-p{
+    position: fixed;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.modal.corpo{
+    
+}
+
+.hide{
+    opacity: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.form-add{
+    background-color: #F0F0F0;
+    width: 800px;
+}
+
 @media (max-width: 1200px) {
     
     body{
