@@ -82,6 +82,15 @@ body {
 .form-add{
     background-color: #F0F0F0;
     width: 800px;
+    margin-top: 5px;
+}
+
+img {
+    width: 600px;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 200px;
 }
 
 @media (max-width: 1200px) {

@@ -56,7 +56,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -71,7 +71,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -86,7 +86,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -101,7 +101,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -116,7 +116,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -131,7 +131,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -146,7 +146,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -161,7 +161,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -176,7 +176,7 @@
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Post"><i
                                         class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Post"><i
+                                <button type="button" class="btn btn-success" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
@@ -235,9 +235,9 @@
                 <form class="form-add">
                     <div class="border border-success p-2 mb-2 rounded">
                         <div>
-                            <input class="form-control titulo" type="text" value="Título entra aqui">
-                            <input class="form-control titulo" type="date" value="2022-10-15">
-                            <input class="form-control titulo" type="text" value="Autor">
+                            <input class="form-control titulo-edit" type="text" value="Título entra aqui">
+                            <input class="form-control titulo-edit" type="date" value="2022-10-15">
+                            <input class="form-control titulo-edit" type="text" value="Autor">
                             <img src="../../../public/img/chainsaw.png">
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Mudar imagem</label>
@@ -245,10 +245,10 @@
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1"
-                                    rows="8">Teste</textarea>
+                                    rows="5">Teste</textarea>
                             </div>
                         </div>
-                        <div class="botao">
+                        <div class="botao-forms">
                             <button type="button" class="btn btn-success" title="Confirmar"><i class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
                             <button type="button" class="btn btn-danger voltar" title="Cancelar"><i class="bi bi-x-lg"></i></button>
                         </div>
