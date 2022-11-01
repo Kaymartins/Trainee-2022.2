@@ -6,41 +6,28 @@ body {
 }
 
 .logo>img {
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    width: 30vh;
     margin-top: 40%;
 }
 
-.cards {
+.imagem{
     margin: 0 auto;
-    width: 40%;
-    margin-top: 7%;
+    width:30%;
+    margin-top: 2vh;
 }
-
-.card-posts{
-    margin: 0 auto;
-    width:40px;
-    margin-top: 10px;
-}
-.card-user{
-    width:40px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-.card-logout{
-    width:40px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.titulo-posts{
+.titulo{
     display: flex;
     justify-content: center;
+
 }
-.titulo-user{
-    display: flex;
-    justify-content: center;
+.cartao{
+    width: 200px;
+    margin: 2vh;
+    border-radius: 7px;
 }
-.titulo-logout{
+.botao{
     display: flex;
     justify-content: center;
 }
