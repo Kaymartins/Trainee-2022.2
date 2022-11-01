@@ -24,7 +24,8 @@ body {
 }
 .cartao{
     width: 200px;
-    margin: 2vh;
+    margin: 40px;
+    margin-top: 20%;
     border-radius: 7px;
 }
 .botao{
