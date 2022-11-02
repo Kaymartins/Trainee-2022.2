@@ -43,7 +43,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -58,7 +58,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -73,7 +73,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -88,7 +88,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -103,7 +103,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -118,7 +118,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -133,7 +133,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -148,7 +148,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -163,7 +163,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -178,7 +178,7 @@
                                         class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success buttons" data-modal="modal-editar" title="Editar Post"><i
                                         class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Post"><i
+                                <button type="button" class="btn btn-danger buttons" data-modal="modal-excluir" title="Excluir Post"><i
                                         class="bi bi-x-lg"></i></button>
                             </div>
                         </td>
@@ -273,8 +273,26 @@
                             <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1" rows="8"
                                 disabled>Teste</textarea>
                         </div>
-                        <div class="botao">
-                            <button type="button" class="btn btn-secondary" title="Voltar"><i class="bi bi-arrow-left"></i></button>
+                        <div class="botao-forms">
+                            <button type="button" class="btn btn-secondary voltar" title="Voltar"><i class="bi bi-arrow-left"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="modal-p hide" id="modal-excluir">
+            <div class="modal-head">
+                
+            </div>
+            <div class="modal-corpo">
+                <form class="form-add">
+                    <div class="border border-success p-2 mb-2 rounded">
+                        <input class="form-control-plaintext" type="text" value="Deseja mesmo excluir o post?" readonly>
+                        <div class="botao-forms">
+                            <button type="button" class="btn btn-success" title="Excluir">Sim <i class="bi bi-check-lg"></i></button>
+                            <button type="button" class="btn btn-danger voltar" title="Cancelar">Não <i class="bi bi-x-lg"></i></button>
                         </div>
                     </div>
                 </form>
