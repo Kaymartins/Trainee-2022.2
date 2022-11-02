@@ -24,11 +24,16 @@ body {
 }
 .cartao{
     width: 200px;
-    margin: 40px;
+    margin: 20px;
     margin-top: 20%;
     border-radius: 7px;
 }
 .botao{
     display: flex;
     justify-content: center;
+}
+
+.grupo-cartoes{
+    display: flex;
+    flex-direction: row;
 }
