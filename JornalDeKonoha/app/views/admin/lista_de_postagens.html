@@ -195,7 +195,6 @@
             </div>
             <div class="modal-corpo">
                 <form class="form-add">
-                    <div class="border border-success p-2 mb-2 rounded">
                         <div class="mb-3">
                             <label for="titulopost" class="form-label">Título do post</label>
                             <input type="text" class="form-control" id="titulopost" placeholder="Título">
@@ -217,11 +216,10 @@
                             <textarea class="form-control" id="conteudo" placeholder="Texto" rows="6"></textarea>
                         </div>
                         <div class="botao-forms buttons">
-                            <button type="button" class="btn btn-success" title="Postar"><i
+                            <button type="button" class="btn btn-success voltar" title="Postar"><i
                                     class="bi bi-file-earmark-plus-fill"></i></button>
                             <button type="button" class="btn btn-danger voltar" title="Cancelar"><i class="bi bi-x-lg"></i></button>
                         </div>
-                    </div>
                 </form>
 
             </div>
@@ -233,12 +231,13 @@
             </div>
             <div class="modal-corpo">
                 <form class="form-add">
-                    <div class="border border-success p-2 mb-2 rounded">
                         <div>
                             <input class="form-control titulo-edit" type="text" value="Título entra aqui">
                             <input class="form-control titulo-edit" type="date" value="2022-10-15">
                             <input class="form-control titulo-edit" type="text" value="Autor">
-                            <img src="../../../public/img/chainsaw.png">
+                            <div class="imagem">
+                                <img src="../../../public/img/chainsaw.png">
+                            </div>
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Mudar imagem</label>
                                 <input class="form-control" type="file" id="formFile">
@@ -249,10 +248,9 @@
                             </div>
                         </div>
                         <div class="botao-forms">
-                            <button type="button" class="btn btn-success" title="Confirmar"><i class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
+                            <button type="button" class="btn btn-success voltar" title="Confirmar"><i class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
                             <button type="button" class="btn btn-danger voltar" title="Cancelar"><i class="bi bi-x-lg"></i></button>
                         </div>
-                    </div>
                 </form>
 
             </div>
@@ -264,37 +262,37 @@
             </div>
             <div class="modal-corpo">
                 <form class="form-add">
-                    <div class="border border-success p-2 mb-2 rounded">
                         <div class="mb-3">
-                            <input class="form-control titulo" type="text" value="Título entra aqui" disabled>
-                            <input class="form-control titulo" type="date" value="2022-10-15" disabled>
-                            <input class="form-control titulo" type="text" value="Autor" disabled>
-                            <img src="../../../public/img/chainsaw.png">
+                            <input class="form-control titulo-visualizar" type="text" value="Título entra aqui" disabled>
+                            <input class="form-control titulo-visualizar" type="date" value="2022-10-15" disabled>
+                            <input class="form-control titulo-visualizar" type="text" value="Autor" disabled>
+                            <div class="imagem">
+                                <img src="../../../public/img/chainsaw.png">
+                            </div>
                             <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1" rows="8"
                                 disabled>Teste</textarea>
                         </div>
                         <div class="botao-forms">
                             <button type="button" class="btn btn-secondary voltar" title="Voltar"><i class="bi bi-arrow-left"></i></button>
                         </div>
-                    </div>
                 </form>
 
             </div>
         </div>
 
-        <div class="modal-p hide" id="modal-excluir">
+        <div class="modal-p modal-excluir hide" id="modal-excluir">
             <div class="modal-head">
-                
+
             </div>
             <div class="modal-corpo">
                 <form class="form-add">
-                    <div class="border border-success p-2 mb-2 rounded">
-                        <input class="form-control-plaintext" type="text" value="Deseja mesmo excluir o post?" readonly>
+                        <div class="texto-exclusao">
+                            <h5>Deseja mesmo excluir o post?</h5>
+                        </div>
                         <div class="botao-forms">
-                            <button type="button" class="btn btn-success" title="Excluir">Sim <i class="bi bi-check-lg"></i></button>
+                            <button type="button" class="btn btn-success voltar" title="Excluir">Sim <i class="bi bi-check-lg"></i></button>
                             <button type="button" class="btn btn-danger voltar" title="Cancelar">Não <i class="bi bi-x-lg"></i></button>
                         </div>
-                    </div>
                 </form>
 
             </div>

@@ -58,13 +58,15 @@ body {
 }
 
 .modal-p{
+    background-color: #F0F0F0;
     position: fixed;
-    width: 800px;
+    width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     transition: 0.4s;
+    border-radius: 5px;
 }
 
 .hide{
@@ -73,18 +75,39 @@ body {
     pointer-events: none;
 }
 
+.modal-head {
+    margin: 5px;
+}
+
+.modal-corpo {
+    margin: 5px;
+}
+
 .form-add{
     background-color: #F0F0F0;
-    width: 800px;
     margin-top: 5px;
 }
 
 img {
-    width: 600px;
-    height: 200px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-left: 200px;
+}
+
+.modal-excluir {
+    width: 40%;
+}
+
+.texto-exclusao {
+    display: flex;
+    flex-grow: 1;
 }
 
 @media (max-width: 1200px) {
@@ -109,5 +132,13 @@ img {
 
     .botao {
         margin-left: 0;
+    }
+
+    .modal-p {
+        width: 70%;
+    }
+
+    img {
+        width: 60%;
     }
 }
