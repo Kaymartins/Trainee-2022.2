@@ -139,6 +139,13 @@ img {
     }
 
     img {
-        width: 60%;
+        width: 40%;
     }
+}
+
+@media (max-width: 900px) {
+    img {
+        width: 50%;
+    }
+
 }
