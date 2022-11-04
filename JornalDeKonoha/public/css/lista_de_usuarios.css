@@ -90,5 +90,48 @@ body {
     .botao {
         margin-left: 0;
     }
+    #modalSee {
+        width: auto;
+    }
+
+    #modalAdd{
+        width: auto;
+    }
+
 }
 
+@media (min-width: 281px){
+
+    #modalSee {
+        width: 270px;
+    }
+
+    #modalAdd{
+        width: 270px;
+    }
+
+}
+
+@media (min-width: 310px){
+
+    #modalSee {
+        width: 310px;
+    }
+
+    #modalAdd{
+        width: 310px;
+    }
+
+}
+
+@media (max-width: 280px){
+
+    #modalSee {
+        width: 270px;
+    }
+
+    #modalAdd{
+        width: 270px;
+    }
+
+}
