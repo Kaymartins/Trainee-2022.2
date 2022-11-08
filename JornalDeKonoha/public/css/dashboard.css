@@ -37,3 +37,8 @@ body {
     display: flex;
     flex-direction: row;
 }
+@media only screen and (max-width: 750px){
+    .grupo-cartoes{
+    flex-direction: column;
+    }
+    }
