@@ -11,7 +11,7 @@ $capsule = new Capsule();
 $config = [
     "driver" => "mysql",
     "host" => "127.0.0.1",
-    "database" => "teste", // coloca o nome do banco aqui
+    "database" => "JornalDeKonoha", // coloca o nome do banco aqui
     "username" => "root",
     "password" => "",
 
