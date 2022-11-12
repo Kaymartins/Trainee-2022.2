@@ -21,7 +21,7 @@ Objetivos do repositorio: Inicialmente o repositorio tinha como objetivo ser um 
 7. Rode o comando: `php -S localhost:8080' ou sua porta de preferencia para iniciar o servidor;
 
 ## Comandos atualmente presentes nesse repositorio
-1. `php codejr create_migration`: Comando responsavel por criar uma migration. Seus parametros são `1° o nome da tabela`, como por exemplo, "users", `2°: --m` , responsavel por criar uma Model junto a migration. A migration serve para auxiliar os desenvolvedores a manterem o controle das versões do banco de dados, já a model serve para representar o elemento de uma determinada tabela.
+1. `php codejr make:migration`: Comando responsavel por criar uma migration. Seus parametros são `1° o nome da tabela`, como por exemplo, "users", `2°: --m` , responsavel por criar uma Model junto a migration. A migration serve para auxiliar os desenvolvedores a manterem o controle das versões do banco de dados, já a model serve para representar o elemento de uma determinada tabela.
 
 2. `php codejr run_migrations`: Comando responsavel por rodar todas as migrations dentro da pasta database\migrations. Esse comando vai fazer com que suas migrations passem a existir no banco de dados.
 
