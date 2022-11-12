@@ -1,0 +1,137 @@
+
+body {
+    padding: 5%;
+    background-color: #F0F0F0;
+}
+
+.titulo {
+    color: #EB6D43;
+}
+
+.but-add {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tabela {
+    width: 100%;
+}
+
+.barra-guia {
+    background-color: #1F6EC9;
+    color: #F0F0F0;
+}
+
+.col-num {
+    width: 12%;
+}
+
+.col-nome {
+    width: 70%;
+}
+
+.botao {
+    display: flex;
+    gap: 5px;
+    margin-left: 20%;
+}
+
+.fade-modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    pointer-events: all;
+}
+
+.modal-p{
+    position: fixed;
+    width: 900px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+}
+
+.modal-head{
+    color: #f0f0f0;
+}
+
+.modal-corpo{
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+.hide{
+    opacity:0;
+    top:0;
+    pointer-events: none;
+}
+@media (max-width: 1024px) {
+    
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 2%;
+    }
+
+    .but-add {
+        margin-top: 40px;
+    }
+
+    .tabela {
+        margin-left: 0;
+    }
+
+    .botao {
+        margin-left: 0;
+    }
+    #modalSee {
+        width: auto;
+    }
+
+    #modalAdd{
+        width: auto;
+    }
+
+}
+
+@media (min-width: 281px){
+
+    #modalSee {
+        width: 270px;
+    }
+
+    #modalAdd{
+        width: 270px;
+    }
+
+}
+
+@media (min-width: 310px){
+
+    #modalSee {
+        width: 310px;
+    }
+
+    #modalAdd{
+        width: 310px;
+    }
+
+}
+
+@media (max-width: 280px){
+
+    #modalSee {
+        width: 270px;
+    }
+
+    #modalAdd{
+        width: 270px;
+    }
+
+}

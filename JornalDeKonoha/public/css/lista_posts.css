@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: 'Naruto';
+    src: url('../font/ninja_naruto/njnaruto.ttf') format('truetype');
+}
+
+.main {
+    background-color: #272226;
+    padding: 5%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+.titulo {
+    color: #EB6D43;
+}
+
+.card-vertical {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-right: 17%;
+    margin-left: 17%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #EB6D43;
+}
+
+.card-horizontal {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+.imagem {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0.1%;
+}
+
+.card-texto {
+    text-align: justify;
+}
+
+.card-horizontal span {
+    color: #1F6EC9;
+}
+
+.mais{
+    text-decoration: none;
+    color: #1F6EC9;
+    font-family: 'Naruto';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.cards-ver {
+    width: fit-content;
+}
+
+.cards-hor {
+    width: fit-content;
+}
+
+
+@media (max-width: 1024px) {
+
+    .navigation {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card-vertical {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+    }
+
+    .cards-ver {
+        margin-top: 10px;
+    }
+
+    .card-horizontal {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
