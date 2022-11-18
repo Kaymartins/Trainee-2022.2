@@ -99,7 +99,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -154,7 +154,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -200,7 +200,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -251,7 +251,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -299,16 +299,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "ea5cbdf18c91558f571f87e77c15a0e81e3dfa2c"
+                "reference": "44248a3d1f27866958c4c04e204b294caa76a5cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/ea5cbdf18c91558f571f87e77c15a0e81e3dfa2c",
-                "reference": "ea5cbdf18c91558f571f87e77c15a0e81e3dfa2c",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/44248a3d1f27866958c4c04e204b294caa76a5cf",
+                "reference": "44248a3d1f27866958c4c04e204b294caa76a5cf",
                 "shasum": ""
             },
             "require": {
@@ -363,11 +363,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-11-07T14:44:03+00:00"
+            "time": "2022-11-15T14:02:01+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -413,16 +413,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v9.39.0",
+            "version": "v9.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "e613ecd3e9351328e64b7e748804aaf85f4a48c1"
+                "reference": "b4045151330d0818a5d9ea1ba8d567999cbf8e08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/e613ecd3e9351328e64b7e748804aaf85f4a48c1",
-                "reference": "e613ecd3e9351328e64b7e748804aaf85f4a48c1",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/b4045151330d0818a5d9ea1ba8d567999cbf8e08",
+                "reference": "b4045151330d0818a5d9ea1ba8d567999cbf8e08",
                 "shasum": ""
             },
             "require": {
@@ -479,7 +479,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-11-02T13:45:32+00:00"
+            "time": "2022-11-14T14:53:33+00:00"
         },
         {
             "name": "nesbot/carbon",
