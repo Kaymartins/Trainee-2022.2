@@ -8,7 +8,12 @@ class Post Extends Model
 {
 
     protected $fillable = [
-        "titulo"
+        "id",
+        "titulo",
+        "conteudo",
+        "imagem",
+        "user_id",
+        "date"
     ];
 
 }

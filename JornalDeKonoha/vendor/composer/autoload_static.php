@@ -249,7 +249,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Composer\\Autoload\\ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Database\\Migrations\\addadminuserstable' => __DIR__ . '/../..' . '/database/migrations/16639111486229_add_admin_users_table.php',
-        'Database\\Migrations\\poststable' => __DIR__ . '/../..' . '/database/migrations/16688132778645_posts_table.php',
+        'Database\\Migrations\\poststable' => __DIR__ . '/../..' . '/database/migrations/16688160900373_posts_table.php',
         'Database\\Migrations\\table_name' => __DIR__ . '/../..' . '/database/default_migration/DefaultMigration.php',
         'Database\\Migrations\\teststable' => __DIR__ . '/../..' . '/database/migrations/16682734188038_tests_table.php',
         'Database\\Migrations\\userstable' => __DIR__ . '/../..' . '/database/migrations/16637836561018_users_table.php',

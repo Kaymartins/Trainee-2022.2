@@ -107,7 +107,7 @@ return array(
     'Composer\\Autoload\\ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Database\\Migrations\\addadminuserstable' => $baseDir . '/database/migrations/16639111486229_add_admin_users_table.php',
-    'Database\\Migrations\\poststable' => $baseDir . '/database/migrations/16688132778645_posts_table.php',
+    'Database\\Migrations\\poststable' => $baseDir . '/database/migrations/16688160900373_posts_table.php',
     'Database\\Migrations\\table_name' => $baseDir . '/database/default_migration/DefaultMigration.php',
     'Database\\Migrations\\teststable' => $baseDir . '/database/migrations/16682734188038_tests_table.php',
     'Database\\Migrations\\userstable' => $baseDir . '/database/migrations/16637836561018_users_table.php',
