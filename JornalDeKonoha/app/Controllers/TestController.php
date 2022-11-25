@@ -13,7 +13,7 @@ class TestController extends Controller
             return redirect('login');
             exit();
         }
-        */
+        **/
     }
 
     //retorna pagina principal
