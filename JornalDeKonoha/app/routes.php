@@ -6,4 +6,5 @@ use App\Core\Router;
 //Rota de exemplo: 
 //Rota para pagina inicial
 
-$router->get('home', 'TestController@index');
+// $router->get('home', 'TestController@index');
+$router->get('users', 'UserController@index');
