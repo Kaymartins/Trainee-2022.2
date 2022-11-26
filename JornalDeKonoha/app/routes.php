@@ -8,4 +8,5 @@ use App\Core\Router;
 
 //$router->get('home', 'TestController@index');
 
-$router->get('', '');
+
+$router->get('posts', 'PostController@index');

@@ -70,7 +70,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="autorpost" class="form-label">Autor</label>
-                                <input type="text" class="form-control" id="autorpost" placeholder="Autor">
+                                <input type="text" class="form-control" id="autorpost" placeholder=-<?= $post->autor ?>>
                             </div>
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Imagem</label>
