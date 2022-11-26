@@ -8,3 +8,5 @@ use App\Core\Router;
 
 // $router->get('home', 'TestController@index');
 $router->get('users', 'UserController@index');
+
+$router->post('users/create', 'UserController@create');

@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\User;
+use App\Core\App;
+
 class UserController extends Controller
 {
     public function __construct()
@@ -16,8 +19,29 @@ class UserController extends Controller
     //retorna pagina principal
     public function index()
     {
-        return view('admin/lista_de_usuarios');
+        $users = User::all();
+        return view('admin/lista_de_usuarios', compact('users'));
     }
+
+    //retorna a pagina responsavel por criar um elemento
+    public function create()
+    {
+        $name = filter_input(IMPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+        $email = filter_input(IMPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
+        $senha = filter_input(IMPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
+
+        if(!name) {
+            $_SESSION['faltaCampos'] = 'ERRO: preencha o campo name!';
+            redirect('users');
+            exit();
+        }
+
+        App::get('database')->adicionar('users', compact('name', 'email', 'senha'));
+
+        redirect('users');
+    }
+
+
 
     //retorna pagina individual de um elemento
     public function show()
@@ -25,12 +49,6 @@ class UserController extends Controller
         //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
         //$exemplo = App\Models\Exemplo::find($id);
         //return view('...', compact("exemplo"))
-    }
-
-    //retorna a pagina responsavel por criar um elemento
-    public function create()
-    {
-        //return view('...');
     }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro

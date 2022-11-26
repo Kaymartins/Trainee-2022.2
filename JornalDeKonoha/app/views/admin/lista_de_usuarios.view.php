@@ -32,129 +32,54 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($users as $user): ?>
                         <tr>
-                            <th scope="row" class="col-num">1</th>
-                            <td class="col-nome">Sasuke Pensativo</td>
+                            <th scope="row" class="col-num"><?= $user->id ?></th>
+                            <td class="col-nome"><?= $user->name ?></td>
                             <td><div class="botao">
                                 <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
                             </div></td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="col-num">2</th>
-                            <td class="col-nome">Luffy Mugiwara</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">3</th>
-                            <td class="col-nome">Lelouch Vi</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">4</th>
-                            <td class="col-nome">Rafael 203</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">5</th>
-                            <td class="col-nome">Denji</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">6</th>
-                            <td class="col-nome">Gustavo 4523</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">7</th>
-                            <td class="col-nome">Guto Cronosfera</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">8</th>
-                            <td class="col-nome">Killua-HxH</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">9</th>
-                            <td class="col-nome">Kira</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="col-num">10</th>
-                            <td class="col-nome">Thorfinn</td>
-                            <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
-                                <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
-                                <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
-                            </div></td>
-                        </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
 
             <div class="fade-modal hide" id="fadeModal"></div>
             <div class="modal-p hide" id="modalAdd">
-                <div class="modal-head">
-                    <h3>Adicionando usuário...</h3>
-                </div>
-                <div class="modal-corpo" id="modalAdd">
-                    <div class="formulario">
-                    <div class="border border-success p-2 mb-2 rounded">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                <form method="post" action="users/create">
+                    <div class="modal-head">
+                        <h3>Adicionando usuário...</h3>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput2">
+                    <div class="modal-corpo" id="modalAdd">
+                        <div class="formulario">
+                        <div class="border border-success p-2 mb-2 rounded">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput3" name="senha">
+                        </div>
+        
+                        <div class="botoes">
+                            <button type="button" class="btn btn-success enviar"><i class="bi bi-person-check-fill"></i></button>
+                            <button type="button" class="btn btn-danger fechar"><i class="bi bi-x-lg"></i></button>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput3" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput3">
-                    </div>
-    
-                    <div class="botoes">
-                        <button type="button" class="btn btn-success enviar"><i class="bi bi-person-check-fill"></i></button>
-                        <button type="button" class="btn btn-danger fechar"><i class="bi bi-x-lg"></i></button>
-                    </div>
-                </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
 
             <div class="fade-modal hide" id="fadeModal"></div>
             <div class="modal-p hide" id="modalSee">
