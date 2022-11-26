@@ -26,11 +26,11 @@ class UserController extends Controller
     //retorna a pagina responsavel por criar um elemento
     public function create()
     {
-        $name = filter_input(IMPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-        $email = filter_input(IMPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
-        $senha = filter_input(IMPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
+        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+        $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
+        $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
 
-        if(!name) {
+        if(!$name) {
             $_SESSION['faltaCampos'] = 'ERRO: preencha o campo name!';
             redirect('users');
             exit();

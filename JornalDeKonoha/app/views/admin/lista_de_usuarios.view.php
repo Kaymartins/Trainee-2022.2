@@ -70,7 +70,7 @@
                         </div>
         
                         <div class="botoes">
-                            <button type="button" class="btn btn-success enviar"><i class="bi bi-person-check-fill"></i></button>
+                            <button type="submit" class="btn btn-success enviar"><i class="bi bi-person-check-fill"></i></button>
                             <button type="button" class="btn btn-danger fechar"><i class="bi bi-x-lg"></i></button>
                         </div>
                     </div>
