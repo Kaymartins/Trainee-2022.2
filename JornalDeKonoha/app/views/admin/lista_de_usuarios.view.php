@@ -46,33 +46,32 @@
                         <!------Modal Visualizar Users------->
                         <div class="fade-modal hide" id="fadeModal"></div>
                         <div class="modal-p hide" id="modalSee-<?= $user->id ?>">
-                                <div class="modal-head">
-                                    <h3>Visualizando usuário...</h3>
-                                </div>    
-                                <div class="modal-corpo" id="modalSee">
-                                    <div class="formulario">
-                                        <div class="border border-success p-2 mb-2 rounded">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                                                <input class="form-control" type="text" placeholder="<?= $user->name ?>" aria-label="Disabled input example" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput2" class="form-label">Email:</label>
-                                                <input class="form-control" type="text" placeholder="<?= $user->email ?>" aria-label="Disabled input example" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput3" class="form-label">Senha:</label>
-                                                <input class="form-control" type="text" placeholder="<?= $user->senha ?>" aria-label="Disabled input example" disabled>
-                                            </div>
-                            
-                                            <div class="botoes">
-                                                <button type="button" class="btn btn-success fechar"><i class="bi bi-arrow-left"></i></button>
-                                            </div>
+                            <div class="modal-head">
+                                <h3>Visualizando usuário...</h3>
+                            </div>    
+                            <div class="modal-corpo" id="modalSee">
+                                <div class="formulario">
+                                    <div class="border border-success p-2 mb-2 rounded">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                                            <input class="form-control" type="text" placeholder="<?= $user->name ?>" aria-label="Disabled input example" disabled>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput2" class="form-label">Email:</label>
+                                            <input class="form-control" type="text" placeholder="<?= $user->email ?>" aria-label="Disabled input example" disabled>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput3" class="form-label">Senha:</label>
+                                            <input class="form-control" type="text" placeholder="<?= $user->senha ?>" aria-label="Disabled input example" disabled>
+                                        </div>
+                        
+                                        <div class="botoes">
+                                            <button type="button" class="btn btn-success fechar"><i class="bi bi-arrow-left"></i></button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-
                         <?php endforeach; ?>
                     </tbody>
                 </table>
@@ -109,8 +108,6 @@
                     </div>
                 </div>
             </div>
-
-
 
         </div>
 
