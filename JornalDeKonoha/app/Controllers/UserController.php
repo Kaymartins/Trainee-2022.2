@@ -48,7 +48,10 @@ class UserController extends Controller
     {
         //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
         //$exemplo = App\Models\Exemplo::find($id);
-        //return view('...', compact("exemplo"))
+        // //return view('...', compact("exemplo"))
+        
+        // $users = App::get('database')->selectAll();
+        // return view('admin/lista_de_usuarios');
     }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro

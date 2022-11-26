@@ -37,11 +37,42 @@
                             <th scope="row" class="col-num"><?= $user->id ?></th>
                             <td class="col-nome"><?= $user->name ?></td>
                             <td><div class="botao">
-                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee"><i class="bi bi-eye"></i></button>
+                                <button type="button" class="btn btn-secondary" title="Visualizar Usuário" data-modal="modalSee-<?= $user->id?>"><i class="bi bi-eye"></i></button>
                                 <button type="button" class="btn btn-success" title="Editar Usuário"><i class="bi bi-pencil-fill"></i></button>
                                 <button type="button" class="btn btn-danger" title="Excluir Usuário"><i class="bi bi-x-lg"></i></button>
                             </div></td>
                         </tr>
+
+                        <!------Modal Visualizar Users------->
+                        <div class="fade-modal hide" id="fadeModal"></div>
+                        <div class="modal-p hide" id="modalSee-<?= $user->id ?>">
+                                <div class="modal-head">
+                                    <h3>Visualizando usuário...</h3>
+                                </div>    
+                                <div class="modal-corpo" id="modalSee">
+                                    <div class="formulario">
+                                        <div class="border border-success p-2 mb-2 rounded">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                                                <input class="form-control" type="text" placeholder="<?= $user->name ?>" aria-label="Disabled input example" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput2" class="form-label">Email:</label>
+                                                <input class="form-control" type="text" placeholder="<?= $user->email ?>" aria-label="Disabled input example" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput3" class="form-label">Senha:</label>
+                                                <input class="form-control" type="text" placeholder="<?= $user->senha ?>" aria-label="Disabled input example" disabled>
+                                            </div>
+                            
+                                            <div class="botoes">
+                                                <button type="button" class="btn btn-success fechar"><i class="bi bi-arrow-left"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
                         <?php endforeach; ?>
                     </tbody>
                 </table>
@@ -81,34 +112,6 @@
 
 
 
-            <div class="fade-modal hide" id="fadeModal"></div>
-            <div class="modal-p hide" id="modalSee">
-                <div class="modal-head">
-                    <h3>Visualizando usuário...</h3>
-                </div>    
-                <div class="modal-corpo" id="modalSee">
-                    <div class="formulario">
-                        <div class="border border-success p-2 mb-2 rounded">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                                <input class="form-control" type="text" placeholder="Sasuke Pensativo" aria-label="Disabled input example" disabled>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput2" class="form-label">Email:</label>
-                                <input class="form-control" type="text" placeholder="Sasukepen@gmail.com" aria-label="Disabled input example" disabled>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput3" class="form-label">Senha:</label>
-                                <input class="form-control" type="text" placeholder="12345" aria-label="Disabled input example" disabled>
-                            </div>
-            
-                            <div class="botoes">
-                                <button type="button" class="btn btn-success fechar"><i class="bi bi-arrow-left"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </body>
