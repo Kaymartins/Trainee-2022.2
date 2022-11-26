@@ -16,14 +16,12 @@ class UserController extends Controller
         // }
     }
 
-    //retorna pagina principal
     public function index()
     {
         $users = User::all();
         return view('admin/lista_de_usuarios', compact('users'));
     }
 
-    //retorna a pagina responsavel por criar um elemento
     public function create()
     {
         $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -40,8 +38,6 @@ class UserController extends Controller
 
         redirect('users');
     }
-
-
 
     //retorna pagina individual de um elemento
     public function show()
@@ -91,24 +87,46 @@ class UserController extends Controller
     }
 
     // retorna a pagina para editar um elemento
-    public function edit()
+    /*public function edit($id, $table, $param)
     {
-        //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
-        //$exemplo = App\Models\Exemplo::find($id);
-        //return view('...', compact("exemplo"))
-    }
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %s;',
+            $table,
+            implode(', ',array_map(function($param){
+                return "{$param} = :{$param}";
+            },array_keys($param))),
+            'id =:id'
+        );
+
+        $param['id'] = $id;
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($param);
+        } catch(Exception $e){
+            die("Erro ao editar BD: {$e->getMessage()}");
+        }
+
+    }*/
 
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
-    {
-        //Muito trampo escrever, esse aqui vocês dão uma pensada ai.
+    {   
+
+        $param  = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha'],
+        ];
+        app::get('database')->edit($_POST['id'],'users', $param);
+
+        return redirect('users');
     }
 
-    // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
-        //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id'];"
-        //App\Models\Exemplo::destroy($id);
-        //return redirect('...');
+        $id = $_POST['id'];
+        App::get('database')->delete('users', $id);
+        return redirect('users');
     }
 }
