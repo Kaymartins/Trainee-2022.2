@@ -49,7 +49,7 @@ body {
 
 .modal-p{
     position: fixed;
-    width: 900px;
+    width: 310px;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
@@ -125,6 +125,10 @@ body {
 }
 
 @media (max-width: 280px){
+
+    .modal-p {
+        width: 270px;
+    }
 
     #modalSee {
         width: 270px;
