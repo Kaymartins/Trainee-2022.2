@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 
-use App\Models\Posts;
+use App\Models\Post;
 use App\Core\App;
 
 class PostController extends Controller
@@ -21,7 +21,12 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('admin/lista_de_usuarios', compact('users'));
+        return view('admin/lista_de_postagens', compact('posts'));
+    }
+
+    public function create()
+    {
+        //return view('...');
     }
 
     public function show()
@@ -32,10 +37,6 @@ class PostController extends Controller
     }
 
     //retorna a pagina responsavel por criar um elemento
-    public function create()
-    {
-        //return view('...');
-    }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function store()

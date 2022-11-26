@@ -10,3 +10,6 @@ use App\Core\Router;
 
 
 $router->get('posts', 'PostController@index');
+$router->post('posts/create', 'PostController@create');
+$router->post('posts/update', 'PostController@update');
+$router->post('posts/delete', 'PostController@delete');

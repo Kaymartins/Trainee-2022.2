@@ -48,13 +48,14 @@
                                 </div>
                             </td>
                         </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
         </div>
 
         <div class="fade-modal hide"  id="fade-modal"></div>
-            <div class="modal-p hide" id="modal-add--<?= $post->id ?>">
+            <div class="modal-p hide" id="modal-add">
                 <div class="modal-head">
                     
                 </div>
@@ -62,7 +63,7 @@
                     <form class="form-add">
                             <div class="mb-3">
                                 <label for="titulopost" class="form-label">Título do post</label>
-                                <input type="text" class="form-control" id="titulopost" placeholder=-<?= $post->titulo ?>>
+                                <input type="text" class="form-control" id="titulopost" placeholder="Título">
                             </div>
                             <div class="mb-3">
                                 <label for="datapost" class="form-label">Data</label>
@@ -70,7 +71,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="autorpost" class="form-label">Autor</label>
-                                <input type="text" class="form-control" id="autorpost" placeholder=-<?= $post->autor ?>>
+                                <input type="text" class="form-control" id="autorpost" placeholder="Autor">
                             </div>
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Imagem</label>
@@ -121,7 +122,6 @@
 
             <div class="modal-p hide" id="modal-visualizar">
                 <div class="modal-head">
-                    
                 </div>
                 <div class="modal-corpo">
                     <form class="form-add">
