@@ -36,7 +36,7 @@
                     <?php foreach ($posts as $post): ?>
                     <tr>
                         <th scope="row" class="col-data">
-                            <?= $post->date ?>
+                            <?= date('d/m/Y',strtotime($post->date)) ?>
                         </th>
                         <td class="col-autor">
                             <?= $post->autor ?>
@@ -63,7 +63,7 @@
                                 <div class="mb-3">
                                     <input class="form-control titulo-visualizar" type="text" value="<?= $post->titulo ?>"
                                         disabled>
-                                    <input class="form-control titulo-visualizar" type="text" value="<?= $post->date ?>"
+                                    <input class="form-control titulo-visualizar" type="text" value="<?= date('d/m/Y',strtotime($post->date)) ?>"
                                         disabled>
                                     <input class="form-control titulo-visualizar" type="text" value="Autor" disabled>
                                     <div class="imagem">
@@ -86,8 +86,9 @@
         <div class="modal-corpo">
             <form class="form-add" method="post" action="posts/update">
                 <div>
-                    <input class="form-control titulo-edit" type="text" value=<?= $post->titulo ?> name="titulo">
-                    <input class="form-control titulo-edit" type="date" value=<?= $post->date ?> name="date">
+                <input type="hidden" name="id"  value="<?= $post->id ?>">
+                    <input class="form-control titulo-edit" type="text" value="<?= $post->titulo ?>" name="titulo">
+                    <input class="form-control titulo-edit" type="date" value="<?= $post->date ?>" name="date">
                     <input class="form-control titulo-edit" type="text" value="Autor">
                     <div class="imagem">
                         <img src="../../../public/img/<?= $post->imagem ?>">

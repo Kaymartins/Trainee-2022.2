@@ -22,10 +22,10 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        foreach ($posts as $post):
-        $datapost = new DateTime($post->date);
-        $post->date = $datapost->format("d/m/Y");
-        endforeach;
+        //foreach ($posts as $post):
+        //$datapost = new DateTime($post->date);
+        //$post->date = $datapost->format("d/m/Y");
+        //endforeach;
         return view('admin/lista_de_postagens', compact('posts'));
     }
 
