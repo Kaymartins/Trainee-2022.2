@@ -65,7 +65,7 @@
                                         disabled>
                                     <input class="form-control titulo-visualizar" type="text" value="<?= date('d/m/Y',strtotime($post->date)) ?>"
                                         disabled>
-                                    <input class="form-control titulo-visualizar" type="text" value="Autor" disabled>
+                                    <input class="form-control titulo-visualizar" type="text" value="<?= $post->autor ?>" disabled>
                                     <div class="imagem">
                                         <img src="../../../public/img/<?= $post->imagem ?>">
                                     </div>
@@ -89,7 +89,13 @@
                 <input type="hidden" name="id"  value="<?= $post->id ?>">
                     <input class="form-control titulo-edit" type="text" value="<?= $post->titulo ?>" name="titulo">
                     <input class="form-control titulo-edit" type="date" value="<?= $post->date ?>" name="date">
-                    <input class="form-control titulo-edit" type="text" value="Autor">
+                    <select class="form-select" aria-label="Default select example" name="user_id">
+                    <option value="<?=$post->user_id?>" selected><?= $post->autor ?></option>
+                        <?php foreach ($users as $user): 
+                            if ($user->id != $post->user_id){ ?>
+                        <option value="<?= $user->id ?>"><?= $user->name ?></option>
+                        <?php } endforeach; ?>
+                    </select>
                     <div class="imagem">
                         <img src="../../../public/img/<?= $post->imagem ?>">
                     </div>
@@ -154,7 +160,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="autorpost" class="form-label">Autor</label>
-                    <input type="text" class="form-control" id="autorpost" placeholder="Autor">
+                    <select class="form-select" aria-label="Default select example" name="user_id">
+                        <option selected>Selecione o autor</option>
+                        <?php foreach ($users as $user): ?>
+                        <option value="<?= $user->id ?>"><?= $user->name ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Imagem</label>

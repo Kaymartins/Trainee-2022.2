@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 
 use App\Models\Post;
+use App\Models\User;
 use App\Core\App;
 use DateTime;
 
@@ -22,11 +23,12 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        //foreach ($posts as $post):
-        //$datapost = new DateTime($post->date);
-        //$post->date = $datapost->format("d/m/Y");
-        //endforeach;
-        return view('admin/lista_de_postagens', compact('posts'));
+        $users = User::all();
+        foreach ($posts as $post):
+            $user = User::find($post->user_id);
+            $post->autor = $user->name;
+        endforeach;
+        return view('admin/lista_de_postagens', compact('posts', 'users'));
     }
 
     public function create()
@@ -35,6 +37,7 @@ class PostController extends Controller
         $date = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_SPECIAL_CHARS);
         $conteudo = filter_input(INPUT_POST, 'conteudo', FILTER_SANITIZE_SPECIAL_CHARS);
         $imagem = filter_input(INPUT_POST, 'imagem', FILTER_SANITIZE_SPECIAL_CHARS);
+        $user_id = filter_input(INPUT_POST, 'user_id', FILTER_SANITIZE_SPECIAL_CHARS);
 
         if(!$titulo) {
             $_SESSION['faltaCampos'] = 'ERRO: preencha o campo titulo!';
@@ -42,7 +45,7 @@ class PostController extends Controller
             exit();
         }
 
-        App::get('database')->adicionar('posts', compact('titulo', 'date', 'conteudo', 'imagem'));
+        App::get('database')->adicionar('posts', compact('titulo', 'date', 'conteudo', 'imagem', 'user_id'));
 
         redirect('posts');
     }
@@ -55,6 +58,7 @@ class PostController extends Controller
             'date' => $_POST['date'],
             'conteudo' => $_POST['conteudo'],
             'imagem' => $_POST['imagem'],
+            'user_id' => $_POST['user_id'],
         ];
         app::get('database')->edit($_POST['id'],'posts', $param);
 
