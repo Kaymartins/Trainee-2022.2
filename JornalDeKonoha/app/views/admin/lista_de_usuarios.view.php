@@ -70,6 +70,59 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!------Modal Editar Users------->
+                        <div class="fade-modal hide" id="fadeModal"></div>
+                        <div class="modal-p hide" id="modalEditar-<?= $user->id ?>">
+
+                        <div class="modal-head">
+                            <h3>Editar informações pessoais</h3>
+                        </div>
+                
+                        <form method="post" action="users/update" class="formulario border border-success p-2 mb-2 rounded">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                <input type="name" value="<?= $user->name ?>" class="form-control" name='name'>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Email</label>
+                                <input type="email" value="<?= $user->email ?>" class="form-control" name='email'>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" name='senha'>
+                            </div>
+                            <div class="buttons">
+
+                                <input type="hidden" name="id"  value="<?= $user->id ?>">
+                                <button type="submit" class="btn btn-primary botao">Salvar Alterações</button>
+                                <button type="button" class="btn btn-danger botao fechar">Fechar</button>
+
+                            </div>
+                        </form>
+                
+                        </div>       
+
+
+
+
+
+                        <!------Modal deletar Users------->
+                        <div class="modal-p hide" id="modalExcluir-<?= $user->id ?>">
+
+                        <div class="modal-head">
+                            <h3>Exclusão de conta...</h3>
+                        </div>
+                        <div class="formulario border border-success p-2 mb-2 rounded">
+                            <form method='post' action="users/delete">      
+                                <h4> Deseja confirmar a exclusão desta conta?</h4>
+                                <input type="hidden" name="id"  value="<?= $user->id ?>">
+                                <button type="submit" class="btn btn-danger botao fechar">Sim</button>
+                                <button type="button" class="btn btn-primary botao fechar">Não</button>
+                                
+                            </form>
+                        </div>
+                        </div>      
                         <?php endforeach; ?>
                     </tbody>
                 </table>
@@ -107,52 +160,9 @@
                 </form>
             </div>
 
-            <div class="fade-modal hide" id="fadeModal"></div>
-            <div class="modal-p hide" id="modalEditar-<?= $user->id ?>">
-
-                <div class="modal-head">
-                    <h3>Editar informações pessoais</h3>
-                </div>
-                
-                <form method="post" action="users/update" class="formulario border border-success p-2 mb-2 rounded">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nome</label>
-                        <input type="name" placeholder="<?= $user->name ?>" class="form-control" name='name'>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="email" placeholder="<?= $user->email ?>" class="form-control" name='email'>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" class="form-control" name='senha'>
-                    </div>
-                    <div class="buttons">
-
-                        <input type="hidden" name="id"  value="<?= $user->id ?>">
-                        <button type="submit" class="btn btn-primary botao">Salvar Alterações</button>
-                        <button type="button" class="btn btn-danger botao fechar">Fechar</button>
-
-                    </div>
-                </form>
-                
-            </div>
             
-            <div class="modal-p hide" id="modalExcluir-<?= $user->id ?>">
-
-                <div class="modal-head">
-                    <h3>Exclusão de conta...</h3>
-                </div>
-                <div class="formulario border border-success p-2 mb-2 rounded">
-                    <form method='post' action="users/delete">      
-                        <h4> Deseja confirmar a exclusão desta conta?</h4>
-                        <input type="hidden" name="id"  value="<?= $user->id ?>">
-                        <button type="submit" class="btn btn-danger botao fechar">Sim</button>
-                        <button type="button" class="btn btn-primary botao">Não</button>
-                        
-                    </form>
-                </div>
-            </div>
+            
+            
         </div>
 
     </body>
