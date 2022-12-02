@@ -152,6 +152,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
         'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
         'App\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/Controllers/TestController.php',
+        'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Controllers/UserController.php',
         'App\\Controllers\\controller_name' => __DIR__ . '/../..' . '/app/Controllers/default_controller/DefaultController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
