@@ -13,6 +13,7 @@
         <title>Welcome!</title>
     </head>
     <body>
+        <?php //require './app/views/include/navbar.html'?>
         <div class="container-lg ">
         <div style="margin-top: 40px;" class="carrossel border">
             <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
@@ -188,7 +189,8 @@
                     </div>    
                 </div>      
             </div>
-        </div>   
+        </div>  
+        <?php //require './app/views/include/footer.html'?> 
     </body>
 
     

@@ -10,7 +10,7 @@ return array(
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
     'App\\Controllers\\ListaPostController' => $baseDir . '/app/Controllers/ListaPostController.php',
     'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
-    'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/TestController.php',
+    'App\\Controllers\\TestController' => $baseDir . '/app/Controllers/LoginController.php',
     'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
     'App\\Controllers\\controller_name' => $baseDir . '/app/Controllers/default_controller/DefaultController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
