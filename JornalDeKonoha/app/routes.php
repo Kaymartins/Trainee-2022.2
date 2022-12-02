@@ -7,7 +7,7 @@ use App\Core\Router;
 //Rota para pagina inicial
 
 $router->get('home', 'HomeController@index');
-$router->get('login', 'TestController@index');
+$router->get('login', 'LoginController@index');
 
 $router->get('posts', 'PostController@index');
 $router->post('posts/create', 'PostController@create');
