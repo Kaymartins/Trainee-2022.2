@@ -54,8 +54,7 @@
                             <div class="col-md-8">
                                 <div class="card-body card-texto">
                                     <h5 class="card-title"><?= $post->titulo ?></h5>
-                                    <p class="card-text"><small class="text-muted">A 1º temporada de 'Elfen Lied' foi lançada em
-                                            <span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
+                                    <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                                     <p class="card-text"><?= $post->conteudo ?></p>
                                     <a class="mais" href="#">Leia mais >>></a>
                                 </div>
@@ -63,7 +62,6 @@
                         </div>
                     </div>
                 <?php } endforeach; ?>
-
             </div>
         </div>
 
