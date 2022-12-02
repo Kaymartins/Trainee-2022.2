@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 
+<?php 
+
+// use App\Models\Post;
+// use App\Models\User;
+// use App\Core\App;
+
+// $busca = $mysql->real_escape_string($_GET['busca']);
+// $sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$busca%'";
+// $sql_query = $mysql->query($sql_code);
+
+// if(!isset($_GET['busca'])) {
+//     header('Location: listaposts');
+// }
+
+$mysql = mysqli_connect('localhost', 'root', '', 'jornaldekonoha');
+$pesquisar = $_GET['busca'];
+//echo $pesquisar; 
+
+$result_posts = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisar%'";
+$resultado_posts = mysqli_query($mysql, $result_posts);
+
+while($rows_cursos = mysqli_fetch_array($resultado_posts)) {
+
+    echo "Nome do post: " . $rows_cursos['titulo'] . "<br>";
+}
+
+
+?>
+
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -22,9 +52,14 @@
                 <nav class="navbar">
                     <div class="container-fluid">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Pesquisar posts"
+                            <input name="busca" class="form-control me-2" type="search" placeholder="Pesquisar posts"
                                 aria-label="Search">
-                            <button type="button" class="btn btn-primary">&telrec;</button>
+                            <button type="submit" class="btn btn-primary">&telrec;</button>
+                            <?php 
+                            // if(!isset($_GET['busca'])) {
+                            //     header('Location: listaposts');
+                            // }
+                            ?>
                         </form>
                     </div>
                 </nav>
