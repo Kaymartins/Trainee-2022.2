@@ -6,8 +6,8 @@ use App\Core\Router;
 //Rota de exemplo: 
 //Rota para pagina inicial
 
-//$router->get('home', 'TestController@index');
-
+$router->get('home', 'HomeController@index');
+$router->get('login', 'LoginController@index');
 
 $router->get('posts', 'PostController@index');
 $router->post('posts/create', 'PostController@create');

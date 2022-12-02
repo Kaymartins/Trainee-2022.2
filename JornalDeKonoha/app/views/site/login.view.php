@@ -13,7 +13,7 @@
 
 
 <body>
-
+    <?php require './app/views/include/navbar.html'?>
     <div class="main-login">
 
         <div class="left-login">
@@ -36,6 +36,7 @@
             </div>
         </div>
     </div>
+    <?php require './app/views/include/footer.html'?>
 </body>
 
 </html>
