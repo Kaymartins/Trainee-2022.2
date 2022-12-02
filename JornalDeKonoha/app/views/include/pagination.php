@@ -1,27 +1,24 @@
-<nav aria-label="Paginacao" class='mt-3'>
-    <ul class="pagination">
+<nav aria-label="Paginacao" class='d-flex justify-content-center'>
+    <ul class="pagination mt-3">
         <li class="page-item <?= $pag <= 1 ? "disabled" : "" ?>">
-            <a class="page-link text-dark" href="?pagina=<?=$pag > 1 ? $page - 1 : 1 ?>" aria-label="Previous">
+            <a class="page-link text-dark" href="?pagina=<?=$pag > 1 ? $pag - 1 : 1 ?>" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
                 <span class="sr-only">Previous</span>
             </a>
         </li>
-        <?php for ($pag = 1 ; $pag <= $tot_pag; $pag++) : ?>
-            <li class="page-item">
-                <a href="?pagina=<?= $pag ?>" class="page-link text-dark">
-                    <?= $pag ?>
+        <?php for ($pagNum = 1 ; $pagNum <= $tot_pag; $pagNum++) : ?>
+            <li class="page-item <?= $pagNum == $pag ? "active" : "" ?>">
+                <a href="?pagina=<?= $pagNum ?>" class="page-link text-dark">
+                    <?= $pagNum ?>
                 </a>
             </li>
         <?php endfor; ?>
         <li class="page-item <?= $pag >= $tot_pag ? "disabled" : "" ?>">
-            <a class="page-link text-dark" href="?pagina=<?=$pag < $tot_pag ? $page + 1 : $tot_pag ?>" aria-label="Next">
+            <a class="page-link text-dark" href="?pagina=<?=$pag < $tot_pag ? $pag + 1 : $tot_pag ?>" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
                 <span class="sr-only">Next</span>
             </a>
         </li>
-
-
-
     </ul>
 
 

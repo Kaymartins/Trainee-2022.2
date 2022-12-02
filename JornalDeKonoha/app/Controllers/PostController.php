@@ -22,13 +22,37 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::all();
+        $pag = 1;
         $users = User::all();
+
+        if(isset ($_GET['pagina']) && !empty($_GET['pagina'])){
+
+            $pag = intval($_GET['pagina']);
+            if($pag <= 0){
+                return redirect('home');
+            }
+        }
+
+        $itensPagina = 5;
+        $startLimit = $itensPagina * $pag - $itensPagina;
+        $linhaCont = App::get('database')->countAll('posts');
+
+        if($startLimit > $linhaCont){
+            return redirect('home');
+        }
+
+        $tot_pag = ceil($linhaCont / $itensPagina);
+
+        
+
+
+        $posts = App::get('database')->selectAll('posts', $startLimit, $itensPagina);
         foreach ($posts as $post):
             $user = User::find($post->user_id);
             $post->autor = $user->name;
         endforeach;
-        return view('admin/lista_de_postagens', compact('posts', 'users'));
+
+        return view('admin/lista_de_postagens', compact( 'posts','users', 'pag', 'tot_pag'));
     }
 
     public function create()

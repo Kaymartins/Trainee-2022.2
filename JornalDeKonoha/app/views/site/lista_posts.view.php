@@ -12,14 +12,16 @@
     </head>
 
     <body>
-        <?php require './app/views/include/navbar.html'?>
+    <?php require './app/views/include/navbar.html'?>
         <div class="main">
+        
             <div class="navigation">
+            
                 <div class="titulo">
                     <h3>Lista de Posts</h3>
                 </div>
 
-                <nav class="navbar">
+                <!--<nav class="navbar">
                     <div class="container-fluid">
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Pesquisar posts"
@@ -27,7 +29,7 @@
                             <button type="button" class="btn btn-primary">&telrec;</button>
                         </form>
                     </div>
-                </nav>
+                </nav>-->
             </div>
 
             <div class="card-vertical">
@@ -65,7 +67,7 @@
                 <?php } endforeach; ?>
             </div>
         </div>
-
+        <?php require './app/views/include/pagination.php'?>
         <?php require './app/views/include/footer.html'?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
