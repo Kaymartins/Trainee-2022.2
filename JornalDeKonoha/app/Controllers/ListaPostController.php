@@ -2,6 +2,11 @@
 
 namespace App\Controllers;
 
+use App\Models\Post;
+use App\Models\User;
+use App\Core\App;
+use DateTime;
+
 class ListaPostController extends Controller
 {
 

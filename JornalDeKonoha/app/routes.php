@@ -18,3 +18,5 @@ $router->get('users', 'UserController@index');
 $router->post('users/delete', 'UserController@delete');
 $router->post('users/create', 'UserController@create');
 $router->post('users/update', 'UserController@update');
+
+$router->get('listaposts', 'ListaPostController@index');
