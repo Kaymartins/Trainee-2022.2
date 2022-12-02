@@ -30,117 +30,41 @@
             </div>
 
             <div class="card-vertical">
+                <?php $cont = 0;
+                    foreach ($posts as $post): 
+                        if (++$cont <= 4) { ?>
                 <div class="card cards-ver" style="width: 18rem;">
-                    <img src="../../../public/img/attackontitan.jpg" class="card-img-top" alt="Imagem de Eren Yeager">
+                    <img src="../../../public/img/<?= $post->imagem ?>" class="card-img-top" alt="imagem">
                     <div class="card-body">
-                        <h5 class="card-title">Attack on Titan</h5>
-                        <p class="card-text">Attack On Titan: humanidade está ameaçada no útimo episódio; veja promo e
-                            assista no serviço de
-                            streaming da Crunchyroll.</p>
+                        <h5 class="card-title"><?= $post->titulo ?></h5>
+                        <p class="card-text"><?= $post->conteudo ?></p>
                         <a class="mais" href="#">Leia mais >>></a>
                     </div>
                 </div>
-
-                <div class="card cards-ver" style="width: 18rem;">
-                    <img src="../../../public/img/anotheranime.png" class="card-img-top" alt="Imagem de Another">
-                    <div class="card-body">
-                        <h5 class="card-title">Another</h5>
-                        <p class="card-text">A Netflix divulgou recentemente algumas novidades com relação a segunda
-                            temporada da série Another
-                            Life.</p>
-                        <a class="mais" href="#">Leia mais >>></a>
-                    </div>
-                </div>
-
-                <div class="card cards-ver" style="width: 18rem;">
-                    <img src="../../../public/img/pecadoscapitais.jpg" class="card-img-top"
-                        alt="Imagem de Nanatsu no Taizai">
-                    <div class="card-body">
-                        <h5 class="card-title">Seven Deadly Sins</h5>
-                        <p class="card-text">A 5ª temporada de The Seven Deadly Sins estreou na Netflix na última
-                            segunda-feira (28) e já está
-                            fazendo sucesso.</p>
-                        <a class="mais" href="#">Leia mais >>></a>
-                    </div>
-                </div>
+                <?php }else { ?>
             </div>
 
             <div class="card-horizontal">
-                <div class="card mb-3 cards-hor">
-                    <div class="row g-0">
-                        <div class="col-md-4 imagem">
-                            <img src="../../../public/img/elfen.png" class="img-fluid rounded-start"
-                                alt="Imagem de Elfen Lied">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body card-texto">
-                                <h5 class="card-title">Inicialmente, lançado como mangá em 2002, Elfen Lied aborda a relação
-                                    violenta entre os seres
-                                    humanos e uma raça de mutantes.</h5>
-                                <p class="card-text"><small class="text-muted">A 1º temporada de 'Elfen Lied' foi lançada em
-                                        <span>25 de julho de 2004</span></small></p>
-                                <p class="card-text">O mundo, de repente, foi categorizado por duas espécies de humanos: os
-                                    "normais" e os mutantes.
-                                    Esses mutantes, chamados de Diclonius, são considerados ameaças ao resto do mundo,
-                                    principalmente por seus grandes
-                                    poderes e habilidades.</p>
-                                <a class="mais" href="#">Leia mais >>></a>
+                    <div class="card mb-3 cards-hor">
+                        <div class="row g-0">
+                            <div class="col-md-4 imagem">
+                                <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start"
+                                    alt="imagem">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body card-texto">
+                                    <h5 class="card-title"><?= $post->titulo ?></h5>
+                                    <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
+                                    <p class="card-text"><?= $post->conteudo ?></p>
+                                    <a class="mais" href="#">Leia mais >>></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="card mb-3 cards-hor">
-                    <div class="row g-0">
-                        <div class="col-md-4 imagem">
-                            <img src="../../../public/img/hxh.png" class="img-fluid rounded-start"
-                                alt="Imagem de HunterXHunter">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body card-texto">
-                                <h5 class="card-title">Saiba mais sobre Gon Freecss, um garoto de 12 anos que pretende se
-                                    tornar um Hunter, um caçador
-                                    de tesouros, lugares perdidos e criaturas estranhas.</h5>
-                                <p class="card-text"><small class="text-muted">A 7º temporada de 'Hunter x Hunter' foi
-                                        lançada em <span>2021</span></small></p>
-                                <p class="card-text">O jovem Gon sonha em ser um Hunter (caçador), assim como seu pai, que o
-                                    abandonou quando ainda era
-                                    pequeno. Decidido a ir atrás do que deseja, ele tem a chance de fazer um teste físico
-                                    dificílimo para provar que ele
-                                    é o melhor Hunter do mundo.</p>
-                                <a class="mais" href="#">Leia mais >>></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 cards-hor">
-                    <div class="row g-0">
-                        <div class="col-md-4 imagem">
-                            <img src="../../../public/img/death.png" class="img-fluid rounded-start"
-                                alt="Imagem de Death Note">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body card-texto">
-                                <h5 class="card-title">Os otakus e otomes que se animem, pois “Death Note” ganhará uma nova
-                                    série live-action.</h5>
-                                <p class="card-text"><small class="text-muted">A 1º temporada de 'Death Note' estreou em
-                                        <span>4 de outubro de 2006</span></small></p>
-                                <p class="card-text">Um estudante de repente encontra um caderno que caiu do céu. Trata-se
-                                    do Death Note, que permite ao
-                                    seu portador matar qualquer pessoa a partir da mera anotação do nome do alvo em uma de
-                                    suas páginas. Sob a
-                                    influência de Ruyk, dono do caderno, ele passa a usá-lo para eliminar criminosos e
-                                    pessoas que escaparam da justiça.
-                                </p>
-                                <a class="mais" href="#">Leia mais >>></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php } endforeach; ?>
             </div>
         </div>
-        <?php require './app/views/include/pagination.php'?>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>

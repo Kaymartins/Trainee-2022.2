@@ -8,6 +8,16 @@ body {
     color: #EB6D43;
 }
 
+.formulario {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    width: 300px;
+    height: auto;
+}
+
 .but-add {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -19,7 +29,7 @@ body {
 
 .barra-guia {
     background-color: #1F6EC9;
-    color: #F0F0F0;
+    color: #f0f0f0;
 }
 
 .col-num {
@@ -49,12 +59,12 @@ body {
 
 .modal-p{
     position: fixed;
-    width: 900px;
+    width: 310px;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    
+    transition: 0.5s;
 }
 
 .modal-head{
@@ -63,7 +73,8 @@ body {
 
 .modal-corpo{
     border-radius: 10px;
-    background-color: #F0F0F0;
+    background-color: #31d0e6;
+    
 }
 
 .hide{
@@ -125,6 +136,10 @@ body {
 }
 
 @media (max-width: 280px){
+
+    .modal-p {
+        width: 270px;
+    }
 
     #modalSee {
         width: 270px;
