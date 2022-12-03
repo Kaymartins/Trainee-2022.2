@@ -23,14 +23,15 @@ class VisualizacaoPostController extends Controller
 
     //retorna pagina principal
     public function index()
-    {
-        $posts = Post::all();
-        $users = User::all();
-        foreach ($posts as $post):
-            $user = User::find($post->user_id);
-            $post->autor = $user->name;
-        endforeach;
-        return view('site/visualizacao_post', compact('posts', 'users'));
+    {   
+        $id = $_GET['id'];
+        
+        $post = Post::find($id);
+        $user = User::find($post->user_id);
+
+        $post->autor = $user->name;
+
+        return view('site/visualizacao_post', compact('post'));
     }
 
 }

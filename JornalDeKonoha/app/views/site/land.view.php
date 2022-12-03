@@ -72,7 +72,7 @@
         </div>
         </div>
         <div style="margin-top: 40px;" class="container-lg">
-            <h2 style="color:aliceblue"> Mais recentes </h2>
+            <h2 class="titulo-landingpage"> Mais recentes </h2>
             <?php foreach ($posts->reverse() as $post):  ?>
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
@@ -83,8 +83,8 @@
                             <div class="card-body">
                             <h4 class="card-title"><b><?= $post->titulo ?></b></h4>
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred"><?= $post->autor ?> -  <?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
-                            <p class="card-text"><?= $post->conteudo ?></p>
-                            <a class="mais" href="visualizacao_post">Leia Mais >>></a>
+                            <p class="card-text"><?= $post->subtitulo ?></p>
+                            <a class="mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
                             </div>
                         </div>
                     </div>
