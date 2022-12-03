@@ -103,11 +103,16 @@
                 <?php } endforeach; 
                     //endwhile;
                 } else{    
-                    $mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
+                    //$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
 
-                    $pesquisa = $mysqli->real_escape_string($_GET['busca']);
+                    //$pesquisa = $mysqli->real_escape_string($_GET['busca']);
                     //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
                     //$sql_query = $mysqli->query($sql_code);
+
+                    $pesquisa = $_GET['busca'];
+                    // $input = $_GET['busca'];
+                    // $pesquisa = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_STRING);
+
                     if($pesquisa == "")
                         header('Location: listaposts');
                     //if($sql_query->rum_rows > 0){
