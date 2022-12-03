@@ -105,13 +105,16 @@
                     $mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
 
                     $pesquisa = $mysqli->real_escape_string($_GET['busca']);
-                    $sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
-                    $sql_query = $mysqli->query($sql_code);
+                    //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
+                    //$sql_query = $mysqli->query($sql_code);
                     if($pesquisa == "")
                         header('Location: listaposts');
-                    if($sql_query->rum_rows > 0){
-                        while($dados = $sql_query->fetch_assoc()){
+                    //if($sql_query->rum_rows > 0){
+                    else {
+                        //while($dados = $sql_query->fetch_assoc()){
                             foreach ($posts as $post):
+                                //if(strrpos($post->titulo, $pesquisa) !== false) {
+                                if (preg_match("/{$pesquisa}/i", $post->titulo)) {
                         ?>
                             <div class="card-horizontal">
                                 <div class="card mb-3 cards-hor">
@@ -131,11 +134,12 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php
+                        <?php }
                         endforeach;
                         }
                     }
-                } ?>
+                //}
+                 ?>
             </div>
         </div>
 

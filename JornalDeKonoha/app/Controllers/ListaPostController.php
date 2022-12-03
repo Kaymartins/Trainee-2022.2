@@ -29,4 +29,12 @@ class ListaPostController extends Controller
         endforeach;
         return view('site/lista_posts', compact('posts', 'users'));
     }
+
+    public function search() 
+    {
+        $pesquisa = $_GET['busca'];
+        app::get('database')->busca($pesquisa, 'posts');
+
+        redirect('listaposts');
+    }
 }

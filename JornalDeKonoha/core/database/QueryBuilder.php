@@ -84,4 +84,20 @@ class QueryBuilder
         }
 
     }
+
+    public function buscar($pesquisa, $table) 
+    {
+        $sql = sprintf(
+            "SELECT * FROM  WHERE %s LIKE '%(%s)%'", 
+            $table, 
+            'titulo =:titulo'
+        );
+
+        try{
+            $stmt = this->pdo->prepare($pesquisa);
+            $stmt->execute(compact('titulo'));
+        } catch(Exception $e){
+            die("Erro ao buscar BD: {$e->getMessage()}");
+        } 
+    }
 }
