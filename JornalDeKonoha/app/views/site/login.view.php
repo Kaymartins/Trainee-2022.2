@@ -5,11 +5,11 @@
 
     <meta charset="UTF-8">
     <meta http-eqiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="../../../public/css/login.css">
     <link rel="stylesheet" href="../../../public/css/navbar_e_footer.css">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Login</title>
 
 </head>
