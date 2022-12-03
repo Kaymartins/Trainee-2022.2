@@ -33,7 +33,7 @@ class ListaPostController extends Controller
     public function search() 
     {
         $pesquisa = $_GET['busca'];
-        app::get('database')->busca($pesquisa, 'posts');
+        app::get('database')->buscar($pesquisa, 'posts');
 
         redirect('listaposts');
     }

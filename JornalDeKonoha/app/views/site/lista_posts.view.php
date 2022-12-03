@@ -55,6 +55,7 @@
                 <nav class="navbar">
                     <div class="container-fluid">
                         <form class="d-flex">
+                        <!-- <form class="d-flex" method="GET" action="listaposts/search"> -->
                             <input name="busca" class="form-control me-2" type="search" placeholder="Pesquisar posts"
                                 aria-label="Search" id="pesquisar" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
                             <button type="submit" class="btn btn-primary">&telrec;</button>
