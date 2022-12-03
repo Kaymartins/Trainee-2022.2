@@ -57,7 +57,7 @@
                         <form class="d-flex">
                             <input name="busca" class="form-control me-2" type="search" placeholder="Pesquisar posts"
                                 aria-label="Search" id="pesquisar" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
-                            <button type="submit" class="btn btn-primary" onclick="searchData()">&telrec;</button>
+                            <button type="submit" class="btn btn-primary">&telrec;</button>
                         </form>
                     </div>
                 </nav>
@@ -107,6 +107,8 @@
                     $pesquisa = $mysqli->real_escape_string($_GET['busca']);
                     $sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
                     $sql_query = $mysqli->query($sql_code);
+                    if($pesquisa == "")
+                        header('Location: listaposts');
                     if($sql_query->rum_rows > 0){
                         while($dados = $sql_query->fetch_assoc()){
                             foreach ($posts as $post):
