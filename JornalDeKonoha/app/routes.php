@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\VisualizarPostController;
 use App\Core\Router;
 
 //-----------Rotas do Front-------------//
@@ -7,6 +8,7 @@ use App\Core\Router;
 //Rota para pagina inicial
 
 $router->get('home', 'HomeController@index');
+
 $router->get('login', 'LoginController@index');
 
 $router->get('posts', 'PostController@index');
@@ -20,3 +22,5 @@ $router->post('users/create', 'UserController@create');
 $router->post('users/update', 'UserController@update');
 
 $router->get('listaposts', 'ListaPostController@index');
+
+$router->get('visualizacao_post', 'VisualizacaoPostController@index');

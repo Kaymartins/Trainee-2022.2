@@ -20,7 +20,7 @@ class TestController extends Controller
     public function index()
     {
         //$exemplo = App\Models\Exemplo::all();
-        return view('site/login');
+        return view('site/visualizacao_post');
     }
 
     //retorna pagina individual de um elemento

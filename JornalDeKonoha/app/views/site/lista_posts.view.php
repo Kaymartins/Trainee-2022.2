@@ -32,14 +32,14 @@
 
             <div class="card-vertical">
                 <?php $cont = 0;
-                    foreach ($posts as $post): 
+                    foreach ($posts->reverse() as $post): 
                         if (++$cont <= 4) { ?>
                 <div class="card cards-ver" style="width: 18rem;">
                     <img src="../../../public/img/<?= $post->imagem ?>" class="card-img-top" alt="imagem">
                     <div class="card-body">
                         <h5 class="card-title"><?= $post->titulo ?></h5>
                         <p class="card-text"><?= $post->conteudo ?></p>
-                        <a class="mais" href="#">Leia mais >>></a>
+                        <a class="mais" href="visualizacao_post">Leia mais >>></a>
                     </div>
                 </div>
                 <?php }else { ?>
