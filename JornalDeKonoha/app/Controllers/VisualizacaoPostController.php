@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Post;
+use App\Models\User;
+use App\Core\App;
+use DateTime;
 
 class VisualizacaoPostController extends Controller
 {
@@ -20,7 +24,13 @@ class VisualizacaoPostController extends Controller
     //retorna pagina principal
     public function index()
     {
-        return view('site/visualizacao_post');
+        $posts = Post::all();
+        $users = User::all();
+        foreach ($posts as $post):
+            $user = User::find($post->user_id);
+            $post->autor = $user->name;
+        endforeach;
+        return view('site/visualizacao_post', compact('posts', 'users'));
     }
 
 }

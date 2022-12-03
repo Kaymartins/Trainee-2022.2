@@ -13,11 +13,10 @@
 </head>
 
 <body>
-<?php //require './app/views/include/navbar.html'?>
+<?php require './app/views/include/navbar.html'?>
     <div class="main">
         <div class="titulo-post">
-            <h1>Confira a data de estreia do anime Chainsaw Man em Streaming</h1>
-            <h2>Denji e Makima estão chegando!</h2>
+            <h1></h1>
             <div class="titulo-usuario">
                 <div class="information-usuario">
                     <figcaption>Sasuke Pensativo</figcaption>
@@ -88,7 +87,7 @@
                 Homem-Motosserra - um humano com coração de demônio.</p>
         </div>
     </div>
-    <?php //require './app/views/include/footer.html'?>
+    <?php require './app/views/include/footer.html'?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

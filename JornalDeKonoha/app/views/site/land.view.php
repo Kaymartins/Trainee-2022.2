@@ -18,6 +18,7 @@
         <div style="margin-top: 40px;" class="carrossel border">
             <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
                 <div class="carousel-indicators">
+                    <?php $cont = 0; ?>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -74,107 +75,23 @@
         </div>
         <div style="margin-top: 40px;" class="container-lg">
             <h2 style="color:aliceblue"> Mais recentes </h2>
+            <?php foreach ($posts->reverse() as $post):  ?>
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
+                            <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start new-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
+                            <h4 class="card-title"><b><?= $post->titulo ?></b></h4>
+                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred"><?= $post->autor ?> -  <?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <a class="mais" href="#">Leia Mais >>></a>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                    </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach ?>
                 
                 <div class="container-lg d-flex justify-content-end">
                     <div class="area-botao">   
