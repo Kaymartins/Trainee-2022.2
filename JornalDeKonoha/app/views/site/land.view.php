@@ -32,35 +32,30 @@
                     <a href="#1"><div  class="carousel-item carrossel-item active">
                         <img src="../../../public/img/tgc.jpg" class="d-block w-100 img-carrossel" alt="post1">
                         <div class="carousel-caption d-md-block carrossel-caption">
-                            <h1>The Great Cleric</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div></a>
                     <a href="#2"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/bofuri.jpg" class="d-block w-100 img-carrossel" alt="post2">
                         <div class="carousel-caption carrossel-caption">
-                            <h1>Bofuri</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div></a>
                     <a href="#3"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/fumetsu.jpg" class="d-block w-100 img-carrossel" alt="post3">
                         <div class="carousel-caption carrossel-caption">
-                            <h1>Fumetsu</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div></a>
                     <a href="#4"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/hoshikuzu.jpg" class="d-block w-100 img-carrossel" alt="post4">
                         <div class="carousel-caption carrossel-caption">
-                            <h1>Hoshikuzu</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div></a>
                     <a href="#5"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/blcl.jpg" class="d-block w-100 img-carrossel" alt="post5">
                         <div class="carousel-caption carrossel-caption">
-                            <h1>Black Clover</h1>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div></a>

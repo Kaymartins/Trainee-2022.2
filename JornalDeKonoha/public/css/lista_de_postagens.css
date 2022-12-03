@@ -92,6 +92,7 @@ img {
     display: flex;
     width: 50%;
     height: 100%;
+    max-width: 250px;
 }
 
 .imagem {

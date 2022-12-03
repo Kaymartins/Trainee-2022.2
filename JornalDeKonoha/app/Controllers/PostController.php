@@ -34,6 +34,7 @@ class PostController extends Controller
     public function create()
     {
         $titulo = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_SPECIAL_CHARS);
+        $subtitulo = filter_input(INPUT_POST, 'subtitulo', FILTER_SANITIZE_SPECIAL_CHARS);       
         $date = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_SPECIAL_CHARS);
         $conteudo = filter_input(INPUT_POST, 'conteudo', FILTER_SANITIZE_SPECIAL_CHARS);
         $imagem = filter_input(INPUT_POST, 'imagem', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -45,7 +46,7 @@ class PostController extends Controller
             exit();
         }
 
-        App::get('database')->adicionar('posts', compact('titulo', 'date', 'conteudo', 'imagem', 'user_id'));
+        App::get('database')->adicionar('posts', compact('titulo', 'subtitulo', 'date', 'conteudo', 'imagem', 'user_id'));
 
         redirect('posts');
     }
@@ -55,6 +56,7 @@ class PostController extends Controller
 
         $param  = [
             'titulo' => $_POST['titulo'],
+            'subtitulo' => $_POST['subtitulo'],
             'date' => $_POST['date'],
             'conteudo' => $_POST['conteudo'],
             'imagem' => $_POST['imagem'],

@@ -55,6 +55,8 @@
                             </div>
                         </td>
                     </tr>
+
+                    <!-- Modal Visualizar -->
                     <div class="modal-p hide" id="modal-visualizar-<?= $post->id?>">
                         <div class="modal-head">
                         </div>
@@ -62,6 +64,8 @@
                             <form class="form-add">
                                 <div class="mb-3">
                                     <input class="form-control titulo-visualizar" type="text" value="<?= $post->titulo ?>"
+                                        disabled>
+                                    <input class="form-control titulo-visualizar" type="text" value="<?= $post->subtitulo ?>"
                                         disabled>
                                     <input class="form-control titulo-visualizar" type="text" value="<?= date('d/m/Y',strtotime($post->date)) ?>"
                                         disabled>
@@ -79,7 +83,9 @@
                             </form>
                         </div>
                     </div>
-                    <div class="modal-p hide" id="modal-editar-<?= $post->id?>">
+
+        <!-- Modal Editar -->
+        <div class="modal-p hide" id="modal-editar-<?= $post->id?>">
         <div class="modal-head">
         </div>
 
@@ -88,6 +94,7 @@
                 <div>
                 <input type="hidden" name="id"  value="<?= $post->id ?>">
                     <input class="form-control titulo-edit" type="text" value="<?= $post->titulo ?>" name="titulo">
+                    <input class="form-control titulo-edit" type="text" value="<?= $post->subtitulo ?>" name="subtitulo">
                     <input class="form-control titulo-edit" type="date" value="<?= $post->date ?>" name="date">
                     <select class="form-select" aria-label="Default select example" name="user_id">
                     <option value="<?=$post->user_id?>" selected><?= $post->autor ?></option>
@@ -117,6 +124,8 @@
             </form>
         </div>
     </div>
+
+    <!-- Modal Deletar -->
     <div class="modal-p modal-excluir hide" id="modal-excluir-<?= $post->id ?>">
         <div class="modal-head">
 
@@ -143,6 +152,7 @@
         </div>
     </div>
 
+    <!-- Modal Criar -->
     <div class="fade-modal hide" id="fade-modal"></div>
     <div class="modal-p hide" id="modal-add">
         <div class="modal-head">
@@ -153,6 +163,10 @@
                 <div class="mb-3">
                     <label for="titulopost" class="form-label">Título do post</label>
                     <input type="text" class="form-control" id="titulopost" placeholder="Título" name="titulo">
+                </div>
+                <div class="mb-3">
+                    <label for="subtitulopost" class="form-label">Subtítulo do post</label>
+                    <input type="text" class="form-control" id="subtitulopost" placeholder="Subtítulo" name="subtitulo">
                 </div>
                 <div class="mb-3">
                     <label for="datapost" class="form-label">Data</label>

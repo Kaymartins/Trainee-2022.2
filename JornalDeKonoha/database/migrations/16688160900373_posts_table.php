@@ -12,6 +12,7 @@ class poststable
         Capsule::schema()->create("posts", function (Blueprint $table) {
             $table->increments("id");
             $table->string("titulo");
+            $table->string("subtitulo");
             $table->text("conteudo");
             $table->string("imagem");
             $table->foreignId("user_id")->constrained()->onDelete("cascade");
