@@ -9,6 +9,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../../../public/css/lista_posts.css">
+        <link rel="stylesheet" href="../../../public/css/navbar_e_footer.css">
+        <link rel="stylesheet" href="../../../public/css/sidebar.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -57,7 +61,7 @@
                                     <h5 class="card-title"><?= $post->titulo ?></h5>
                                     <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                                     <p class="card-text"><?= $post->conteudo ?></p>
-                                    <a class="mais" href="#">Leia mais >>></a>
+                                    <a class="mais" href="visualizacao_post">Leia mais >>></a>
                                 </div>
                             </div>
                         </div>
