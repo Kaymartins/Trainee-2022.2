@@ -54,8 +54,8 @@
 
                 <nav class="navbar">
                     <div class="container-fluid">
-                        <form class="d-flex">
-                        <!-- <form class="d-flex" method="GET" action="listaposts/search"> -->
+                        <!-- <form class="d-flex"> -->
+                        <form class="d-flex" method="GET" action="listaposts/search">
                             <input name="busca" class="form-control me-2" type="search" placeholder="Pesquisar posts"
                                 aria-label="Search" id="pesquisar" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
                             <button type="submit" class="btn btn-primary">&telrec;</button>
@@ -101,52 +101,54 @@
                             </div>
                         </div>
                     </div>
-                <?php } endforeach; 
+                <?php } 
+                endforeach; 
                     //endwhile;
-                } else{    
-                    //$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
+            } else{    
+                //$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
 
-                    //$pesquisa = $mysqli->real_escape_string($_GET['busca']);
-                    //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
-                    //$sql_query = $mysqli->query($sql_code);
+                //$pesquisa = $mysqli->real_escape_string($_GET['busca']);
+                //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
+                //$sql_query = $mysqli->query($sql_code);
 
-                    $pesquisa = $_GET['busca'];
-                    // $input = $_GET['busca'];
-                    // $pesquisa = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_STRING);
+                //$pesquisa = $_GET['busca'];
+                
+                // $input = $_GET['busca'];
+                // $pesquisa = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_STRING);
 
-                    if($pesquisa == "")
-                        header('Location: listaposts');
-                    //if($sql_query->rum_rows > 0){
-                    else {
-                        //while($dados = $sql_query->fetch_assoc()){
-                            foreach ($posts as $post):
-                                //if(strrpos($post->titulo, $pesquisa) !== false) {
-                                if (preg_match("/{$pesquisa}/i", $post->titulo)) {
-                        ?>
-                            <div class="card-horizontal">
-                                <div class="card mb-3 cards-hor">
-                                    <div class="row g-0">
-                                        <div class="col-md-4 imagem">
-                                            <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start"
-                                                alt="imagem">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body card-texto">
-                                                <h5 class="card-title"><?= $post->titulo ?></h5>
-                                                <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
-                                                <p class="card-text"><?= $post->conteudo ?></p>
-                                                <a class="mais" href="#">Leia mais >>></a>
-                                            </div>
+                if($pesquisa == "")
+                    header('Location: listaposts');
+                //if($sql_query->rum_rows > 0){
+                else {
+                    //while($dados = $sql_query->fetch_assoc()){
+                        foreach ($posts as $post):
+                            //if(strrpos($post->titulo, $pesquisa) !== false) {
+                            if (preg_match("/{$pesquisa}/i", $post->titulo)) {
+                    ?>
+                        <div class="card-horizontal">
+                            <div class="card mb-3 cards-hor">
+                                <div class="row g-0">
+                                    <div class="col-md-4 imagem">
+                                        <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start"
+                                            alt="imagem">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body card-texto">
+                                            <h5 class="card-title"><?= $post->titulo ?></h5>
+                                            <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
+                                            <p class="card-text"><?= $post->conteudo ?></p>
+                                            <a class="mais" href="#">Leia mais >>></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        <?php }
-                        endforeach;
-                    }
+                        </div>
+                    <?php }
+                    endforeach;
                 }
-                //}
-                ?>
+            }
+            //}
+            ?>
             </div>
         </div>
 

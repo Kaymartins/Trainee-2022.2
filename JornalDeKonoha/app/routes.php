@@ -20,4 +20,4 @@ $router->post('users/create', 'UserController@create');
 $router->post('users/update', 'UserController@update');
 
 $router->get('listaposts', 'ListaPostController@index');
-//$router->get('listaposts/search', 'ListaPostController@search');
+$router->get('listaposts/search', 'ListaPostController@search');
