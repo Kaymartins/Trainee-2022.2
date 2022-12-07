@@ -111,7 +111,7 @@
                 //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
                 //$sql_query = $mysqli->query($sql_code);
 
-                //$pesquisa = $_GET['busca'];
+                // $pesquisa = $_GET['busca'];
                 
                 // $input = $_GET['busca'];
                 // $pesquisa = filter_input(INPUT_GET, 'input', FILTER_SANITIZE_STRING);

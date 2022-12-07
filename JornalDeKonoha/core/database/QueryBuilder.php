@@ -87,13 +87,14 @@ class QueryBuilder
 
     public function buscar($titulo, $table, $pesquisa) 
     {
-        var_dump($pesquisa);
-        // $sql = sprintf(
-        //     "SELECT * FROM %s WHERE %s LIKE '%(%s)%'", 
-        //     $table, 
-        //     'titulo =:titulo'
-        // );
-        $sql = "SELECT * FROM {$table} WHERE {$titulo} LIKE '%{$pesquisa}%'";
+        
+        //$sql = "SELECT * FROM {$table} WHERE {$titulo} LIKE '%{$pesquisa}%'";
+        $sql = sprintf(
+            "SELECT * FROM %s WHERE %s LIKE '%%s%'",
+            $table,
+            $titulo,
+            $pesquisa
+        );
 
         try{
             // $stmt = this->pdo->prepare($pesquisa);

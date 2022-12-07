@@ -32,7 +32,7 @@ class ListaPostController extends Controller
 
     public function search() 
     {
-        $titulo = $_GET['titulo'];
+        $titulo = 'Another';
         $pesquisa = $_GET['busca'];
         //$pesquisa = filter_input(INPUT_POST, 'busca', FILTER_SANITIZE_SPECIAL_CHARS);
 
