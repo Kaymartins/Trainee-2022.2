@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <?php 
-
 // use App\Models\Post;
 // use App\Models\User;
 // use App\Core\App;
@@ -15,8 +14,6 @@
 // }
 
 
-
-
 // $mysql = mysqli_connect('localhost', 'root', '', 'jornaldekonoha');
 // $pesquisar = $_GET['busca'];
 // //echo $pesquisar; 
@@ -28,8 +25,6 @@
 
 //     echo "Nome do post: " . $rows_cursos['titulo'] . "<br>";
 // }
-
-
 ?>
 
 
@@ -69,7 +64,6 @@
             ?>
             <div class="card-vertical">
                 <?php $cont = 0;
-                //while($rows_cursos = mysqli_fetch_array($resultado_posts)):
                 foreach ($posts as $post): 
                     if (++$cont <= 4) { ?>
                         <div class="card cards-ver" style="width: 18rem;">
@@ -103,7 +97,6 @@
                     </div>
                 <?php } 
                 endforeach; 
-                    //endwhile;
             } else{    
                 //$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
 

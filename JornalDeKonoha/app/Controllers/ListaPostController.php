@@ -32,13 +32,28 @@ class ListaPostController extends Controller
 
     public function search() 
     {
-        $titulo = 'Another';
+        $posts = Post::all();
+
+        $cont = 0;
+        // foreach ($posts as $post):
+        //     $allTitulos = [
+        //         'postTitle' -> $post->titulo,  
+        //     ];
+        //     $cont++;
+        // endforeach;
+
+        foreach ($posts as $post):
+            $allTitulos[$cont] = $post->titulo;
+            $cont++;
+        endforeach;
+        var_dump($allTitulos);
+
         $pesquisa = $_GET['busca'];
         //$pesquisa = filter_input(INPUT_POST, 'busca', FILTER_SANITIZE_SPECIAL_CHARS);
 
-        $resultados = app::get('database')->buscar($titulo, 'posts', $pesquisa);
+        $resultados = app::get('database')->buscar($allTitulos, 'posts', $pesquisa);
         $tableResultado = [
-            'usuarios' -> $resultados,
+            'posts' -> $resultados,
         ];
 
         //redirect('listaposts');
