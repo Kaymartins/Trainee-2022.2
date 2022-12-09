@@ -24,3 +24,5 @@ $router->post('users/update', 'UserController@update');
 $router->get('listaposts', 'ListaPostController@index');
 
 $router->get('visualizacao_post', 'VisualizacaoPostController@index');
+
+$router->get('dashboard', 'DashboardController@index');
