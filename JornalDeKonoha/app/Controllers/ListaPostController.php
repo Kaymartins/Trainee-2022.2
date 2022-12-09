@@ -34,29 +34,23 @@ class ListaPostController extends Controller
     {
         $posts = Post::all();
 
+        $titulo = "Another";
         $cont = 0;
-        // foreach ($posts as $post):
-        //     $allTitulos = [
-        //         'postTitle' -> $post->titulo,  
-        //     ];
-        //     $cont++;
-        // endforeach;
 
         foreach ($posts as $post):
             $allTitulos[$cont] = $post->titulo;
             $cont++;
         endforeach;
-        var_dump($allTitulos);
 
         $pesquisa = $_GET['busca'];
-        //$pesquisa = filter_input(INPUT_POST, 'busca', FILTER_SANITIZE_SPECIAL_CHARS);
 
-        $resultados = app::get('database')->buscar($allTitulos, 'posts', $pesquisa);
+        $resultados = app::get('database')->buscar('titulo', 'posts', $pesquisa);
         $tableResultado = [
-            'posts' -> $resultados,
+            'posts' => $resultados,
         ];
 
-        //redirect('listaposts');
+        var_dump($tableResultado);
+
         return view('site/lista_posts', $tableResultado);
     }
 }

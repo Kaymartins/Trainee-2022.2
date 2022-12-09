@@ -25,6 +25,14 @@
 
 //     echo "Nome do post: " . $rows_cursos['titulo'] . "<br>";
 // }
+
+
+//----------Código Aqui---------//
+//$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
+
+                //$pesquisa = $mysqli->real_escape_string($_GET['busca']);
+                //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
+                //$sql_query = $mysqli->query($sql_code);
 ?>
 
 
@@ -50,7 +58,7 @@
                 <nav class="navbar">
                     <div class="container-fluid">
                         <!-- <form class="d-flex"> -->
-                        <form class="d-flex" method="GET" action="listaposts/search">
+                        <form class="d-flex" method="GET" action="/listaposts/search">
                             <input name="busca" class="form-control me-2" type="search" placeholder="Pesquisar posts"
                                 aria-label="Search" id="pesquisar" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
                             <button type="submit" class="btn btn-primary">&telrec;</button>
@@ -98,11 +106,7 @@
                 <?php } 
                 endforeach; 
             } else{    
-                //$mysqli = new mysqli('localhost', 'root', '', 'jornaldekonoha');
-
-                //$pesquisa = $mysqli->real_escape_string($_GET['busca']);
-                //$sql_code = "SELECT * FROM posts WHERE titulo LIKE '%$pesquisa%'";
-                //$sql_query = $mysqli->query($sql_code);
+                // Código aqui
 
                 // $pesquisa = $_GET['busca'];
                 
@@ -144,7 +148,6 @@
             ?>
             </div>
         </div>
-
         <?php require './app/views/include/footer.html'?>
         
         <script>
