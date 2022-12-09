@@ -46,7 +46,7 @@
 
             </div>
             <div class="card-footer  botaodashboard">
-                <button type="button" class="btn btn-secondary">Ver usuário</button>
+            <a href = "users"><button type="button" class="btn btn-secondary">Ver usuário</button></a>
             </div>
         </div>
 
