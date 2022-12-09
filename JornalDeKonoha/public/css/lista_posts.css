@@ -62,6 +62,10 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
+a:hover{
+    text-shadow: 5px 5px 5px black;
+}
+
 .cards-ver {
     width: fit-content;
 }

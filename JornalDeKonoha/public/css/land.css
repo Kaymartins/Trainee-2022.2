@@ -5,8 +5,8 @@ html {
 body{
     background: #272226;
 }
-a
-{
+
+a {
     text-decoration: none;
 }
 
@@ -62,6 +62,12 @@ a
     position: absolute;
     width: 800px;
 }
+
+.titulo-landingpage {
+    color: #EB6D43;
+    margin-bottom: 40px;
+}
+
 .carrossel-caption h1{
     background-color: #272226f3;
     text-align: left;
