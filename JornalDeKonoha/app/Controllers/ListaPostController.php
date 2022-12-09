@@ -47,10 +47,9 @@ class ListaPostController extends Controller
         $resultados = app::get('database')->buscar('titulo', 'posts', $pesquisa);
         $tableResultado = [
             'posts' => $resultados,
+            'pesquisa' => $pesquisa
         ];
-
-        var_dump($tableResultado);
-
+        
         return view('site/lista_posts', $tableResultado);
     }
 }
