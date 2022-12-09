@@ -34,14 +34,6 @@ class ListaPostController extends Controller
     {
         $posts = Post::all();
 
-        $titulo = "Another";
-        $cont = 0;
-
-        foreach ($posts as $post):
-            $allTitulos[$cont] = $post->titulo;
-            $cont++;
-        endforeach;
-
         $pesquisa = $_GET['busca'];
 
         $resultados = app::get('database')->buscar('titulo', 'posts', $pesquisa);
@@ -49,7 +41,7 @@ class ListaPostController extends Controller
             'posts' => $resultados,
             'pesquisa' => $pesquisa
         ];
-        
+
         return view('site/lista_posts', $tableResultado);
     }
 }
