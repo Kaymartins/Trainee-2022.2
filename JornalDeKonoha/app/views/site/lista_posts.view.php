@@ -31,7 +31,13 @@
             </div>
 
             <?php
-            if(!isset($_GET['busca'])) {
+            if(empty($posts)){
+                ?>
+                <div style="height:50vh;" class="d-flex justify-content-center align-items-center">
+                    <h1 class="titulo">Posts não foram encontrados!</h1>
+                </div>
+                <?php
+            } else if(!isset($_GET['busca'])) {
             ?>
             <div class="card-vertical">
                 <?php $cont = 0;
