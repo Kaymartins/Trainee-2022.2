@@ -18,7 +18,7 @@ ul li{
     left: 0;
 }
 
-.botao a:hover{
+.botaosidebar a:hover{
     transition: 0.5s;
     background-color: #ffffff;
 }
@@ -43,7 +43,7 @@ a{
     align-items: center;
 }
 
-.botao{
+.botaosidebar{
     background-color: #EB6D43;
     width: 100%;
     display: flex;
