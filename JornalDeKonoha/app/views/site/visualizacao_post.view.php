@@ -31,7 +31,7 @@
 
         <div class="conteudo">
             <div class="img-principal">
-                <img src="../../../public/img/<?= $post->imagem ?>" alt="Poster de Chainsaw Man">
+                <img class="imagem-post" src="../../../public/img/<?= $post->imagem ?>" alt="Poster de Chainsaw Man">
             </div>
             <p><?= $post->conteudo ?></p>
         </div>

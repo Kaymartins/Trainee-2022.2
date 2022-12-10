@@ -76,7 +76,7 @@
                                         <img src="../../../public/img/<?= $post->imagem ?>">
                                     </div>
                                     <textarea class="form-control"
-                                        id="exampleFormControlTextarea1" rows="8" disabled><?= $post->conteudo ?></textarea>
+                                        id="exampleFormControlTextarea1" rows="3" disabled><?= $post->conteudo ?></textarea>
                                 </div>
                                 <div class="botao-forms">
                                     <button type="button" class="btn btn-secondary voltar" title="Voltar"><i
@@ -114,7 +114,7 @@
                     </div>
                     <div class="mb-3">
                         <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1"
-                            rows="5" name="conteudo"><?= $post->conteudo ?></textarea>
+                            rows="3" name="conteudo"><?= $post->conteudo ?></textarea>
                     </div>
                 </div>
                 <div class="botao-forms">
@@ -189,7 +189,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="conteudo" class="form-label">Conteúdo</label>
-                    <textarea class="form-control" id="conteudo" placeholder="Texto" rows="2"
+                    <textarea class="form-control" id="conteudo" placeholder="Texto" rows="3"
                         name="conteudo"></textarea>
                 </div>
                 <div class="botao-forms buttons">

@@ -58,9 +58,15 @@ body {
     margin-right: 2%;
 }
 
+.imagem-post {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 10px;
+}
+
 .conteudo p {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .conteudo span {

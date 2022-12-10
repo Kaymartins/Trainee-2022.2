@@ -96,12 +96,16 @@ a {
 }
 
 .new-img{
-    width: 300px;
+    /* width: 350px; */
+    width: 420px;
     height: 100%;
+    max-height: 300px;
 }
 
 .new-card{
     background-color: rgb(230, 230, 230);
+    /* margin-left: 10%;
+    width: 80%; */
 }
 
 

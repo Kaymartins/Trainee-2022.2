@@ -141,13 +141,14 @@ img {
 
     img {
         width: 40%;
+        max-height: 200px;
     }
 }
 
 @media (max-width: 900px) {
     img {
         width: 50%;
-        max-height: 100px;
+        max-height: 150px;
     }
     input {
         height: 35px;
