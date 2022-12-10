@@ -26,39 +26,39 @@
                 </div>
                 <div class="carousel-inner carrossel-inner">
                     <a href="#1"><div  class="carousel-item carrossel-item active">
-                        <img src="../../../public/img/tgc.jpg" class="d-block w-100 img-carrossel" alt="post1">
-                        <div class="carousel-caption d-md-block carrossel-caption">
+                        <img src="../../../public/img/tgc2.jpg" class="d-block w-100 img-carrossel" alt="post1">
+                        <!--<div class="carousel-caption d-md-block carrossel-caption">
                             <h1>The Great Cleric</h1>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div></a>
                     <a href="#2"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/bofuri.jpg" class="d-block w-100 img-carrossel" alt="post2">
-                        <div class="carousel-caption carrossel-caption">
+                        <img src="../../../public/img/bofuri2.jpg" class="d-block w-100 img-carrossel" alt="post2">
+                        <!--<div class="carousel-caption carrossel-caption">
                             <h1>Bofuri</h1>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div></a>
                     <a href="#3"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/fumetsu.jpg" class="d-block w-100 img-carrossel" alt="post3">
-                        <div class="carousel-caption carrossel-caption">
+                        <img src="../../../public/img/fumetsu2.jpg" class="d-block w-100 img-carrossel" alt="post3">
+                        <!--<div class="carousel-caption carrossel-caption">
                             <h1>Fumetsu</h1>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div></a>
                     <a href="#4"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/hoshikuzu.jpg" class="d-block w-100 img-carrossel" alt="post4">
-                        <div class="carousel-caption carrossel-caption">
+                        <img src="../../../public/img/hoshikuzu2.jpg" class="d-block w-100 img-carrossel" alt="post4">
+                        <!--<div class="carousel-caption carrossel-caption">
                             <h1>Hoshikuzu</h1>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div></a>
                     <a href="#5"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/blcl.jpg" class="d-block w-100 img-carrossel" alt="post5">
-                        <div class="carousel-caption carrossel-caption">
+                        <img src="../../../public/img/blcl2.jpg" class="d-block w-100 img-carrossel" alt="post5">
+                       <!-- <div class="carousel-caption carrossel-caption">
                             <h1>Black Clover</h1>
                             <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        </div>-->
                     </div></a>
                 </div>
                 <button class="carousel-control-prev ctrl" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -77,13 +77,13 @@
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
+                            <img src="../../../public/img/bofuri.jpg" class="img-fluid rounded-start new-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
+                            <h4 class="card-title"><b>Bofuri</b></h4>
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a class="mais" href="#">Leia Mais >>></a>
                             </div>
 
@@ -94,13 +94,47 @@
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
+                        <img src="../../../public/img/tgc.jpg" class="img-fluid rounded-start new-img" alt="...">
                     </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
+                            <h4 class="card-title"><b>The Great Cleric</b></h4>
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a class="mais" href="#">Leia Mais >>></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 new-card" >
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../../public/img/hoshikuzu.jpg" class="img-fluid rounded-start new-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-title"><b>Hoshikuzu</b></h4>
+                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a class="mais" href="#">Leia Mais >>></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 new-card" >
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../../public/img/fumetsu.jpg" class="img-fluid rounded-start new-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-title"><b>Fumetsu</b></h4>
+                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a class="mais" href="#">Leia Mais >>></a>
                             </div>
 
@@ -115,9 +149,9 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
+                            <h4 class="card-title"><b>Black Clover</b></h4>
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a class="mais" href="#">Leia Mais >>></a>
                             </div>
 
@@ -125,69 +159,9 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 new-card" >
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="../../../public/img/blcl.jpg" class="img-fluid rounded-start new-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h4 class="card-title"><b>Card title</b></h4>
-                            <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred">João -  12/10/2022</span></small></p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="mais" href="#">Leia Mais >>></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="container-lg d-flex justify-content-end">
-                    <div class="area-botao">   
-                        <a class="maisantigas" href='#'>
-                            <div class="navigation loading animated fadeIn">   
-                                <ul>
-                                    <li>Mais antigas >></li>
-                                    <div class="bg"></div>
-                                </ul>  
-                            </div>
-                        </a>
-                    </div>    
-                </div>  
+                <button type="button" class="btn btn-primary btn-lg btn-block w-100">Mais Antigas >>></button>
+                
             </div>
         </div>  
         <?php require './app/views/include/footer.html'?> 
