@@ -62,12 +62,13 @@ class ListaPostController extends Controller
             }
         }
 
-        $itensPagina = 1;
+        $itensPagina = 7;
         $startLimit = $itensPagina * $pag - $itensPagina;
         //$linhaCont = App::get('database')->countAll('posts');
         
         $posts = Post::all();
-        $pesquisa = $_GET['busca'];
+        //$pesquisa = $_GET['busca'];
+        $pesquisa = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_SPECIAL_CHARS);
         
         $resultados = app::get('database')->buscar('titulo', 'posts', $pesquisa);
         //$posts = App::get('database')->selectAll('tabelaResult', $startLimit, $itensPagina);
@@ -78,7 +79,7 @@ class ListaPostController extends Controller
         }
         
         $tot_pag = ceil($linhaCont / $itensPagina);
-
+        
         $tableResultado = [
             'posts' => $resultados,
             'pesquisa' => $pesquisa,
