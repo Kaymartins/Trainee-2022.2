@@ -1,4 +1,4 @@
-<nav aria-label="Paginacao" class='d-flex justify-content-center'>
+<nav aria-label="Paginacao" class='d-flex justify-content-center' style="background-color:#272226;">
     <ul class="pagination mt-3">
         <li class="page-item <?= $pag <= 1 ? "disabled" : "" ?>">
             <a class="page-link text-dark" href="?pagina=<?=$pag > 1 ? $pag - 1 : 1 ?>" aria-label="Previous">
@@ -15,8 +15,8 @@
         <?php endfor; ?>
         <li class="page-item <?= $pag >= $tot_pag ? "disabled" : "" ?>">
             <a class="page-link text-dark" href="?pagina=<?=$pag < $tot_pag ? $pag + 1 : $tot_pag ?>" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
                 <span class="sr-only">Next</span>
+                <span aria-hidden="true">&raquo;</span>
             </a>
         </li>
     </ul>
