@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\Post;
 use App\Models\User;
 use App\Core\App;
 
@@ -18,8 +18,31 @@ class UserController extends Controller
 
     public function index()
     {
-        $users = User::all();
-        return view('admin/lista_de_usuarios', compact('users'));
+
+        $pag = 1;
+        $posts = Post::all();
+
+        if(isset ($_GET['pagina']) && !empty($_GET['pagina'])){
+
+            $pag = intval($_GET['pagina']);
+            if($pag <= 0){
+                return redirect('home');
+            }
+        }
+
+        $itensPagina = 5;
+        $startLimit = $itensPagina * $pag - $itensPagina;
+        $linhaCont = App::get('database')->countAll('users');
+
+        if($startLimit > $linhaCont){
+            return redirect('home');
+        }
+
+        $tot_pag = ceil($linhaCont / $itensPagina);
+        $users = App::get('database')->selectAll('users', $startLimit, $itensPagina);
+
+        return view('admin/lista_de_usuarios', compact('posts','users', 'pag', 'tot_pag'));
+
     }
 
     public function create()
