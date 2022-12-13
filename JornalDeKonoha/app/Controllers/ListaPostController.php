@@ -52,42 +52,18 @@ class ListaPostController extends Controller
 
     public function search() 
     {
-        $pag = 1;
-
-        if(isset ($_GET['pagina']) && !empty($_GET['pagina'])){
-            $pag = intval($_GET['pagina']);
-
-            if($pag <= 0){
-                return redirect('/listaposts');
-            }
-        }
-
-        $itensPagina = 7;
-        $startLimit = $itensPagina * $pag - $itensPagina;
-        //$linhaCont = App::get('database')->countAll('posts');
-        
         $posts = Post::all();
+
         //$pesquisa = $_GET['busca'];
         $pesquisa = filter_input(INPUT_GET, 'busca', FILTER_SANITIZE_SPECIAL_CHARS);
         
         $resultados = app::get('database')->buscar('titulo', 'posts', $pesquisa);
-        //$posts = App::get('database')->selectAll('tabelaResult', $startLimit, $itensPagina);
-        
-        $linhaCont = count($resultados);
-        if($startLimit > $linhaCont){
-            return redirect('/listaposts');
-        }
-        
-        $tot_pag = ceil($linhaCont / $itensPagina);
         
         $tableResultado = [
             'posts' => $resultados,
             'pesquisa' => $pesquisa,
-            'pag' => $pag,
-            'tot_pag' => $tot_pag
         ];
 
         return view('site/lista_posts', $tableResultado);
-        //return view('site/lista_posts', compact('resultados', 'pesquisa', 'pag', 'tot_pag'));
     }
 }
