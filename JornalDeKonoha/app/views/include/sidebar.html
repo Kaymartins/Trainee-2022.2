@@ -18,8 +18,11 @@
         <a href="posts"><li><i class="bi bi-pencil-fill icon"></i>Posts</li></a>
         <a href="users"><li><i class="bi bi-person-fill icon"></i>Usuários</li></a>
         <div class="user">        
-          <a style="text-decoration: none;" href="#"><li><i class="bi bi-power icon"></i>Logout</li></a>
-          <p>Fulano de Tal</p>
+          <a style="text-decoration: none;" href="logout"><li><i class="bi bi-power icon"></i>Logout</li></a>
+          <p>
+            <?= $_SESSION['logado']->name;
+            ?>
+          </p>
         </div>
       </ul>
       

@@ -56,7 +56,9 @@
 
             </div>
             <div class="card-footer botaodashboard">
+                <a href="logout">
                 <button type="button" class="btn btn-secondary">Sair</button>
+                </a>
             </div>
         </div>
     </div>

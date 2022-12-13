@@ -28,18 +28,33 @@
         </div>
 
         <div class="right-login">
-            <div class="card-login">
+            <form action="logar" method="POST" class="card-login">
                 <h1>LOGIN</h1>
+
                 <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <label for="usuario">Email</label>
+                    <input type="text" name="usuario" placeholder="Email">
+                    
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="btn-login">Login</button>
-            </div>
+                <?php
+                if(isset($_SESSION['error_message'])) {
+                ?>
+                <div class="text-warning">
+                    <?= $_SESSION['error_message'] ?>
+                </div>
+                
+                <?php
+                unset($_SESSION['error_message']);
+                }
+                ?>
+                <button type="submit" class="btn-login">Login</button>
+            
+            </form>
+
         </div>
     </div>
     <?php require './app/views/include/footer.html'?>
