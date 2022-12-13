@@ -16,7 +16,7 @@
     <body>
     <?php require './app/views/include/sidebar.html'?>
         <div class="navigation container">
-            <h1 class="titulo"><u>Tabela-Usuários:</u></h1>
+            <h1 class="titulo"><u>Usuários:</u></h1>
             <button type="button" class="btn btn-primary but-add" title="Adicionar Usuário" data-modal="modalAdd">
                 <i class="bi bi-person-plus-fill"></i>
             </button>
@@ -24,7 +24,7 @@
 
         <div class="container">
             <div class="table-responsive">
-                <table class="table table-bordered border-secondary table-sm table-hover tabela">
+                <table class="table table-bordered border-secondary table-sm tabela">
                     <thead>
                         <tr class="barra-guia">
                             <th scope="col" class="col-num">Nº</th>
@@ -34,7 +34,7 @@
                     </thead>
                     <tbody>
                         <?php foreach($users as $user): ?>
-                        <tr>
+                        <tr class="linhas">
                             <th scope="row" class="col-num"><?= $user->id ?></th>
                             <td class="col-nome"><?= $user->name ?></td>
                             <td><div class="botao">
@@ -165,7 +165,7 @@
             
             
         </div>
-
+        <?php require './app/views/include/pagination.php'?>                    
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
