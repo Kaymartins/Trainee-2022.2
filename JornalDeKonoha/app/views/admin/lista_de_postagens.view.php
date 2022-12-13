@@ -15,7 +15,7 @@
 
 <body>
     <div class="navigation container">
-        <h1 class="titulo"><u>Tabela-Postagens:</u></h1>
+        <h1 class="titulo"><u>Postagens:</u></h1>
 
         <button type="button" class="btn btn-primary but-add buttons" data-modal="modal-add" title="Criar post"
             id="botaoAddPost"><i class="bi bi-file-earmark-plus-fill"></i></button>
@@ -23,7 +23,7 @@
 
     <div class="container">
         <div class="table-responsive">
-            <table class="table table-bordered border-secondary table-sm table-hover tabela">
+            <table class="table table-bordered border-secondary table-sm tabela">
                 <thead>
                     <tr class="barra-guia">
                         <th scope="col" class="col-data">Data</th>
@@ -34,7 +34,7 @@
                 </thead>
                 <tbody>
                     <?php foreach ($posts as $post): ?>
-                    <tr>
+                    <tr class="linhas">
                         <th scope="row" class="col-data">
                             <?= date('d/m/Y',strtotime($post->date)) ?>
                         </th>
@@ -44,7 +44,7 @@
                         <td class="col-post">
                             <?= $post->titulo ?>
                         </td>
-                        <td>
+                        <td class="col-buttons">
                             <div class="botao buttons">
                                 <button type="button" class="btn btn-secondary buttons" data-modal="modal-visualizar-<?= $post->id?>"
                                     title="Visualizar Post"><i class="bi bi-eye"></i></button>

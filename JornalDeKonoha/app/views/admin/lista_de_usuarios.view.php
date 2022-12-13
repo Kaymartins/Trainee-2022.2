@@ -15,7 +15,7 @@
     <body>
         
         <div class="navigation container">
-            <h1 class="titulo"><u>Tabela-Usuários:</u></h1>
+            <h1 class="titulo"><u>Usuários:</u></h1>
             <button type="button" class="btn btn-primary but-add" title="Adicionar Usuário" data-modal="modalAdd">
                 <i class="bi bi-person-plus-fill"></i>
             </button>
@@ -23,7 +23,7 @@
 
         <div class="container">
             <div class="table-responsive">
-                <table class="table table-bordered border-secondary table-sm table-hover tabela">
+                <table class="table table-bordered border-secondary table-sm tabela">
                     <thead>
                         <tr class="barra-guia">
                             <th scope="col" class="col-num">Nº</th>
@@ -33,7 +33,7 @@
                     </thead>
                     <tbody>
                         <?php foreach($users as $user): ?>
-                        <tr>
+                        <tr class="linhas">
                             <th scope="row" class="col-num"><?= $user->id ?></th>
                             <td class="col-nome"><?= $user->name ?></td>
                             <td><div class="botao">

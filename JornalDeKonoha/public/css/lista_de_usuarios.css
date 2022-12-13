@@ -1,7 +1,7 @@
 
 body {
     padding: 5%;
-    background-color: #F0F0F0;
+    background-color: #272226;
 }
 
 .titulo {
@@ -34,10 +34,16 @@ body {
 
 .col-num {
     width: 12%;
+    color: #F0F0F0;
 }
 
 .col-nome {
     width: 70%;
+    color: #F0F0F0;
+}
+
+.linhas:hover {
+    background-color: #333032;
 }
 
 .botao {
