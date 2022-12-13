@@ -1,6 +1,6 @@
 
 body {
-    background-color: #F0F0F0;
+    background-color: #272226;
 }
 
 .titulo {
@@ -24,14 +24,21 @@ body {
 
 .col-data {
     width: 8%;
+    color: #F0F0F0;
 }
 
 .col-post {
     width: 52%;
+    color: #F0F0F0;
 }
 
 .col-autor{
-    width: 18%
+    width: 18%;
+    color: #F0F0F0;
+}
+
+.linhas:hover {
+    background-color: #333032;
 }
 
 .botao {

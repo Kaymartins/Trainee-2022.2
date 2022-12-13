@@ -7,11 +7,18 @@ use App\Core\Router;
 //Rota de exemplo: 
 //Rota para pagina inicial
 
-$router->get('home', 'HomeController@index');
+//-----------User-------------//
 
+$router->get('home', 'HomeController@index');
+$router->get('', 'HomeController@index');
 $router->get('login', 'LoginController@index');
 $router->post('logar', 'LoginController@autenticacao');
 $router->get('logout', 'LoginController@logout');
+
+$router->get('listaposts', 'ListaPostController@index');
+$router->get('listaposts/search', 'ListaPostController@search');
+
+//-----------Admin-------------//
 
 $router->get('posts', 'PostController@index');
 $router->post('posts/create', 'PostController@create');

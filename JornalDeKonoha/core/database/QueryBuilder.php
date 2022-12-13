@@ -13,11 +13,11 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function sellectAll($table, $start_limit = null, $rows_amount = null) {
+    public function selectAll($table, $start_limit = null, $rows_amount = null) {
         $sql = "select * from {$table}";
 
         if($start_limit >= 0 && $rows_amount > 0) {
-            $sql -= " LIMIT {$start_limit}, {$rows_amount}";
+            $sql .= " LIMIT {$start_limit}, {$rows_amount}";
         }
 
         try{
@@ -31,6 +31,18 @@ class QueryBuilder
         }
     }
 
+    public function countAll($table){
+
+        $sql = "SELECT COUNT(*) FROM {$table}";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+            return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
+        } catch(Exception $e){
+            die("Erro ocorrido: {$e->getMessage()}");
+        }
+    }
     public function adicionar($table, $dados) {
         $sql = sprintf(
             'INSERT INTO %s (%s) VALUES (%s)',
@@ -83,5 +95,24 @@ class QueryBuilder
             die("Erro ao editar BD: {$e->getMessage()}");
         }
 
+    }
+
+    public function buscar($titulo, $table, $pesquisa) 
+    {
+        $sql = sprintf(
+            "SELECT * FROM %s WHERE %s LIKE '%%%s%%'",
+            $table,
+            $titulo,
+            $pesquisa,
+        );
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_OBJ);
+        } catch(Exception $e){
+            die("Erro ao fazer busca: {$e->getMessage()}");
+        } 
     }
 }

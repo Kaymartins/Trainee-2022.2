@@ -86,7 +86,7 @@
                             </div>
                         </a>
                     </div>    
-                </div>      
+                </div>  
             </div>
         </div>  
         <?php require './app/views/include/footer.html'?>

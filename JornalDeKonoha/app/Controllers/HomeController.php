@@ -15,6 +15,8 @@ class HomeController extends Controller
         // }
     }
 
+ 
+
     public function index()
     {
         $posts = Post::all();
@@ -25,4 +27,5 @@ class HomeController extends Controller
         endforeach;
         return view('site/land', compact('posts', 'users'));
     }
+
 }
