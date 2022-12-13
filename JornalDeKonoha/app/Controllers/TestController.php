@@ -23,6 +23,11 @@ class TestController extends Controller
         return view('site/land');
     }
 
+    public function posts()
+    {
+        //$exemplo = App\Models\Exemplo::all();
+        return view('site/lista_posts');
+    }
     //retorna pagina individual de um elemento
     public function show()
     {

@@ -7,3 +7,4 @@ use App\Core\Router;
 //Rota para pagina inicial
 
 $router->get('home', 'TestController@index');
+$router->get('listaposts', 'TestController@posts');

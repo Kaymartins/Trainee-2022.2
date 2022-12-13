@@ -59,17 +59,19 @@ a
 }
 
 .carrossel-caption{
-    position: absolute;
+    position: relative;
+    bottom:150px;
     width: 800px;
 }
 .carrossel-caption h1{
     background-color: #272226f3;
     text-align: left;
     padding-left: 35px;
+    
 }
 
 .carrossel-caption p{
-   
+    height: 20px;
     background-color: #272226f3;
     text-align: left;
     padding-left: 35px;
@@ -199,31 +201,40 @@ a:hover{
     src: url("../font/njnaruto.ttf") format("truetype");
 }
 
+@media(min-width: 1440px){
+    .carrossel-caption{
+        position: relative;
+        bottom: 200px;
+        width: 80%;
+    }
+}
+
+
 @media(max-width: 1075px){
     .carrossel-caption{
-        position: absolute;
-        top: 275px;
+        position: relative;
+        bottom: 125px;
         width: 80%;
     }
 }
 
 @media(max-width: 830px){
     .carrossel-caption{
-        position: absolute;
-        top: 280px;
+        position: relative;
+        bottom: 100px;
     }
 }
 
-/*@media(max-width: 572px){
+@media(max-width: 572px){
     .carrossel-caption{
-        position: absolute;
+        position: relative;
         top: 180px;
     }
-}*/
+}
 
 @media(max-width:768px){
     .carrossel-caption{
-        position: absolute;
+        position: relative;
         top: 180px;
     }
 
@@ -258,7 +269,7 @@ a:hover{
 
 @media(max-width:510px){
     .carrossel-caption {
-        position: absolute;
+        position: relative;
         top: 150px;
     }
 }
