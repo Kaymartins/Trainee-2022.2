@@ -48,7 +48,7 @@
                         <div class="fade-modal hide" id="fadeModal"></div>
                         <div class="modal-p hide" id="modalSee-<?= $user->id ?>">
                             <div class="modal-head">
-                                <h3>Visualizando usuário...</h3>
+                                <h3></h3>
                             </div>    
                             <div>
                                 <div class="formulario border border-success p-2 mb-2 rounded">
@@ -66,7 +66,7 @@
                                     </div>
                     
                                     <div class="botoes">
-                                        <button type="button" class="btn btn-success fechar"><i class="bi bi-arrow-left"></i></button>
+                                        <button type="button" class="btn btn-secondary fechar" title="Voltar"><i class="bi bi-arrow-left"></i></button>
                                     </div>   
                                 </div>
                             </div>
@@ -77,63 +77,68 @@
                         <div class="modal-p hide" id="modalEditar-<?= $user->id ?>">
 
                         <div class="modal-head">
-                            <h3>Editar informações pessoais</h3>
+                            <h3></h3>
                         </div>
                 
-                        <form method="post" action="users/update" class="formulario border border-success p-2 mb-2 rounded">
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Nome</label>
-                                <input type="name" value="<?= $user->name ?>" class="form-control" name='name'>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Email</label>
-                                <input type="email" value="<?= $user->email ?>" class="form-control" name='email'>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                <input type="password" class="form-control" name='senha'>
-                            </div>
-                            <div class="buttons">
-
-                                <input type="hidden" name="id"  value="<?= $user->id ?>">
-                                <button type="submit" class="btn btn-primary botao">Salvar Alterações</button>
-                                <button type="button" class="btn btn-danger botao fechar">Fechar</button>
-
-                            </div>
-                        </form>
+                        <div class="modal-editar formulario border border-success p-2 mb-2 rounded">
+                            <form method="post" action="users/update">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                    <input type="name" value="<?= $user->name ?>" class="form-control" name='name'>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                                    <input type="email" value="<?= $user->email ?>" class="form-control" name='email'>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" name='senha'>
+                                </div>
+                                <div class="buttons buttons-editar">
+                                    <input type="hidden" name="id"  value="<?= $user->id ?>">
+                                    <button type="submit" class="btn btn-success" title="Confirmar"><i
+                                        class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
+                                    <button type="button" class="btn btn-danger fechar" title="Cancelar"><i
+                                        class="bi bi-x-lg"></i></button>
+                                </div>
+                            </form>
+                        </div>
                 
                         </div>       
 
 
-
-
-
-                        <!------Modal deletar Users------->
-                        <div class="modal-p hide" id="modalExcluir-<?= $user->id ?>">
-
+                        <!------Modal Deletar Users------->
+                        <div class="modal-p modal-excluir hide" id="modalExcluir-<?= $user->id ?>">
                         <div class="modal-head">
-                            <h3>Exclusão de conta...</h3>
+                            <h3></h3>
                         </div>
-                        <div class="formulario border border-success p-2 mb-2 rounded">
-                            <form method='post' action="users/delete">      
-                                <h4> Deseja confirmar a exclusão desta conta?</h4>
-                                <input type="hidden" name="id"  value="<?= $user->id ?>">
-                                <button type="submit" class="btn btn-danger botao fechar">Sim</button>
-                                <button type="button" class="btn btn-primary botao fechar">Não</button>
-                                
-                            </form>
-                        </div>
+                            <div class="formulario border border-success p-2 mb-2 rounded">
+                                <form method='post' action="users/delete"> 
+                                    <div class="texto-exclusao">     
+                                        <h5> Deseja mesmo excluir a conta?</h5>
+                                    </div>
+                                    <div class="buttons buttons-deletar">
+                                        <input type="hidden" name="id"  value="<?= $user->id ?>">
+                                        <button type="submit" class="btn btn-success fechar" title="Excluir">Sim <i
+                                            class="bi bi-check-lg"></i></button>
+                                        <button type="button" class="btn btn-danger fechar" title="Cancelar">Não <i
+                                            class="bi bi-x-lg"></i></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>      
                         <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
 
+
+            <!------Modal Adicionar Users------->
             <div class="fade-modal hide" id="fadeModal"></div>
             <div class="modal-p hide" id="modalAdd">
                 <form method="post" action="users/create">
                     <div class="modal-head">
-                        <h3>Adicionando usuário...</h3>
+                        <h3></h3>
                     </div>
                     <div id="modalAdd">
                         <div class="formulario border border-success p-2 mb-2 rounded">
@@ -152,8 +157,8 @@
                             </div>
             
                             <div class="botoes">
-                                <button type="submit" class="btn btn-success enviar"><i class="bi bi-person-check-fill"></i></button>
-                                <button type="button" class="btn btn-danger fechar"><i class="bi bi-x-lg"></i></button>
+                                <button type="submit" class="btn btn-success enviar" title="Adicionar"><i class="bi bi-person-check-fill"></i></button>
+                                <button type="button" class="btn btn-danger fechar" title="Cancelar"><i class="bi bi-x-lg"></i></button>
                             </div>
                         </div>
                     </div>
@@ -161,12 +166,10 @@
                 </form>
             </div>
 
-            
-            
-            
         </div>
         <?php require './app/views/include/pagination.php'?>                    
     </body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>

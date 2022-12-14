@@ -52,6 +52,12 @@ body {
     margin-left: 20%;
 }
 
+.botoes {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
 .fade-modal{
     position: fixed;
     top:0;
@@ -88,6 +94,30 @@ body {
     top:0;
     pointer-events: none;
 }
+
+.modal-editar {
+    background-color: #f0f0f0;
+}
+
+.buttons-editar {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    flex-direction: row-reverse;
+}
+
+.texto-exclusao {
+    display: flex;
+    flex-grow: 1;
+}
+
+.buttons-deletar {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 1024px) {
     
     .titulo {
