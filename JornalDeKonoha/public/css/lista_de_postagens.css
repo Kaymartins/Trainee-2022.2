@@ -118,6 +118,17 @@ img {
     flex-grow: 1;
 }
 
+.paginacao li{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.paginacao li a{
+    height: 50px;
+    margin-top: 5px;
+}
+
 @media (max-width: 1200px) {
     
     body{

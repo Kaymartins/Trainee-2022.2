@@ -1,5 +1,5 @@
 <nav aria-label="Paginacao" class='d-flex justify-content-center' style="background-color:#272226;">
-    <ul class="pagination mt-3">
+    <ul class="pagination paginacao mt-3">
         <li class="page-item <?= $pag <= 1 ? "disabled" : "" ?>">
             <a class="page-link text-dark" href="?pagina=<?=$pag > 1 ? $pag - 1 : 1 ?>" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
