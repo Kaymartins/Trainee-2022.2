@@ -1,0 +1,34 @@
+
+.pagin {
+    background-color: red;
+    height: 35px;
+    /* width: 320px; */
+}
+
+.button-pag {
+    background-color: green;
+    display: flex;
+    height: 35px;
+    margin-top: -10%;
+}
+
+.but-preview {
+    margin-top: -17.5%;
+}
+
+.button-pag-next {
+    background-color: green;
+    display: flex;
+    height: 35px;
+    margin-top: -14%;
+}
+
+.but-next {
+    margin-top: -27.5%;
+}
+
+.but-num {
+    background-color: aqua;
+    margin-top: -30%;
+    height: 35px;
+}

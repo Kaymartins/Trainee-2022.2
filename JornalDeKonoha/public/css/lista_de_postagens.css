@@ -110,12 +110,16 @@ img {
 }
 
 .modal-excluir {
-    width: 40%;
+    width: 285px;
 }
 
 .texto-exclusao {
     display: flex;
     flex-grow: 1;
+}
+
+.buttons-delete {
+    margin-top: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -149,6 +153,10 @@ img {
     img {
         width: 40%;
         max-height: 200px;
+    }
+
+    .modal-excluir {
+        width: 285px;
     }
 }
 

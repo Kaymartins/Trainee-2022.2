@@ -12,10 +12,12 @@
         <link rel="stylesheet" href="../../../public/css/lista_de_postagens.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../../public/css/sidebar.css">
+    <link rel="stylesheet" href="../../../public/css/pagination.css">
 </head>
 
 <body>
     <?php require './app/views/include/sidebar.html'?>
+
     <div class="navigation container">
         <h1 class="titulo"><u>Postagens:</u></h1>
 
@@ -58,6 +60,7 @@
                         </td>
                     </tr>
 
+
                     <!-- Modal Visualizar -->
                     <div class="modal-p hide" id="modal-visualizar-<?= $post->id?>">
                         <div class="modal-head">
@@ -86,68 +89,68 @@
                         </div>
                     </div>
 
-        <!-- Modal Editar -->
-        <div class="modal-p hide" id="modal-editar-<?= $post->id?>">
-        <div class="modal-head">
-        </div>
 
-        <div class="modal-corpo">
-            <form class="form-add" method="post" action="posts/update">
-                <div>
-                <input type="hidden" name="id"  value="<?= $post->id ?>">
-                    <input class="form-control titulo-edit" type="text" value="<?= $post->titulo ?>" name="titulo">
-                    <input class="form-control titulo-edit" type="text" value="<?= $post->subtitulo ?>" name="subtitulo">
-                    <input class="form-control titulo-edit" type="date" value="<?= $post->date ?>" name="date">
-                    <select class="form-select" aria-label="Default select example" name="user_id">
-                    <option value="<?=$post->user_id?>" selected><?= $post->autor ?></option>
-                        <?php foreach ($users as $user): 
-                            if ($user->id != $post->user_id){ ?>
-                        <option value="<?= $user->id ?>"><?= $user->name ?></option>
-                        <?php } endforeach; ?>
-                    </select>
-                    <div class="imagem">
-                        <img src="../../../public/img/<?= $post->imagem ?>">
+                    <!-- Modal Editar -->
+                    <div class="modal-p edit hide" id="modal-editar-<?= $post->id?>">
+                        <div class="modal-head">
+                        </div>
+
+                        <div class="modal-corpo  modal-editar">
+                            <form class="form-add" method="post" action="posts/update">
+                                <div class="categorias">
+                                <input type="hidden" name="id"  value="<?= $post->id ?>">
+                                    <input class="form-control titulo-edit title-e" type="text" value="<?= $post->titulo ?>" name="titulo">
+                                    <input class="form-control titulo-edit title-e" type="text" value="<?= $post->subtitulo ?>" name="subtitulo">
+                                    <input class="form-control titulo-edit title-e" type="date" value="<?= $post->date ?>" name="date">
+                                    <select class="form-select" aria-label="Default select example" name="user_id">
+                                    <option value="<?=$post->user_id?>" selected><?= $post->autor ?></option>
+                                        <?php foreach ($users as $user): 
+                                            if ($user->id != $post->user_id){ ?>
+                                        <option value="<?= $user->id ?>"><?= $user->name ?></option>
+                                        <?php } endforeach; ?>
+                                    </select>
+                                    <div class="imagem">
+                                        <img src="../../../public/img/<?= $post->imagem ?>">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Mudar imagem</label>
+                                        <input class="form-control" type="file" id="formFile" name="imagem">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1"
+                                            rows="3" name="conteudo"><?= $post->conteudo ?></textarea>
+                                    </div>
+                                </div>
+                                <div class="botao-forms">
+                                    <button type="submit" class="btn btn-success voltar" title="Confirmar"><i
+                                            class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
+                                    <button type="button" class="btn btn-danger voltar" title="Cancelar"><i
+                                            class="bi bi-x-lg"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">Mudar imagem</label>
-                        <input class="form-control" type="file" id="formFile" name="imagem">
+
+
+                    <!-- Modal Deletar -->
+                    <div class="modal-p modal-excluir hide" id="modal-excluir-<?= $post->id ?>">
+                        <div class="modal-head">
+                        </div>
+                        <div class="modal-corpo">
+                            <form class="form-add" method='post' action="posts/delete">
+                                <div class="texto-exclusao">
+                                    <h5>Deseja mesmo excluir o post?</h5>
+                                </div>
+                                <input type="hidden" name="id"  value="<?= $post->id ?>">
+                                <div class="botao-forms buttons-delete">
+                                    <button type="submit" class="btn btn-success voltar" title="Excluir">Sim <i
+                                            class="bi bi-check-lg"></i></button>
+                                    <button type="button" class="btn btn-danger voltar" title="Cancelar">Não <i
+                                            class="bi bi-x-lg"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" value="Texto entra aqui" id="exampleFormControlTextarea1"
-                            rows="3" name="conteudo"><?= $post->conteudo ?></textarea>
-                    </div>
-                </div>
-                <div class="botao-forms">
-                    <button type="submit" class="btn btn-success voltar" title="Confirmar"><i
-                            class="bi bi-pencil-fill"></i> <i class="bi bi-check-lg"></i></button>
-                    <button type="button" class="btn btn-danger voltar" title="Cancelar"><i
-                            class="bi bi-x-lg"></i></button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Modal Deletar -->
-    <div class="modal-p modal-excluir hide" id="modal-excluir-<?= $post->id ?>">
-        <div class="modal-head">
-
-        </div>
-        <div class="modal-corpo">
-            <form class="form-add" method='post' action="posts/delete">
-                <div class="texto-exclusao">
-                    <h5>Deseja mesmo excluir o post?</h5>
-                </div>
-                <input type="hidden" name="id"  value="<?= $post->id ?>">
-                <div class="botao-forms">
-                    <button type="submit" class="btn btn-success voltar" title="Excluir">Sim <i
-                            class="bi bi-check-lg"></i></button>
-                    <button type="button" class="btn btn-danger voltar" title="Cancelar">Não <i
-                            class="bi bi-x-lg"></i></button>
-                </div>
-            </form>
-        </div>
-    </div>
-
                     <?php endforeach; ?>
                 </tbody>
             </table>
