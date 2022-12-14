@@ -97,7 +97,7 @@
                                             <h5 class="card-title"><?= $post->titulo ?></h5>
                                             <p class="card-text"><small class="text-muted"><span><?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                                             <p class="card-text"><?= $post->conteudo ?></p>
-                                            <a class="mais" href="#">Leia mais >>></a>
+                                            <a class="mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
                                         </div>
                                     </div>
                                 </div>
