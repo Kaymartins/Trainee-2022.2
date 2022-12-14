@@ -64,7 +64,7 @@
                     <div class="card mb-3 cards-hor">
                         <div class="row g-0">
                             <div class="col-md-4 imagem">
-                                <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start"
+                                <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start new-img"
                                     alt="imagem">
                             </div>
                             <div class="col-md-8">
@@ -89,7 +89,7 @@
                             <div class="card mb-3 cards-hor">
                                 <div class="row g-0">
                                     <div class="col-md-4 imagem">
-                                        <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start"
+                                        <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start new-img"
                                             alt="imagem">
                                     </div>
                                     <div class="col-md-8">

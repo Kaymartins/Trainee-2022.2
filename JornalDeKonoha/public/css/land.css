@@ -16,6 +16,7 @@ a {
     font-family: 'MyFamily';
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
 .maisantigas    {
     text-decoration: none;
     color: #1F6EC9;
@@ -96,18 +97,23 @@ a {
 }
 
 .new-img{
-    /* width: 350px; */
-    width: 420px;
+    width: 350px;
     height: 100%;
-    max-height: 300px;
+    max-height: 260px;
+}
+
+.imagem {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0.1%;
 }
 
 .new-card{
     background-color: rgb(230, 230, 230);
-    /* margin-left: 10%;
-    width: 80%; */
+    margin-left: 12.5%;
+    width: 75%;
 }
-
 
 .nome-cred{
     font-weight: bold;
@@ -117,6 +123,7 @@ a {
 .area-botao{
     width: 40%;
 }
+
 .cards p{
     height: 100px;
     
@@ -128,7 +135,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-
 
 a:hover{
     text-shadow: 5px 5px 5px black;

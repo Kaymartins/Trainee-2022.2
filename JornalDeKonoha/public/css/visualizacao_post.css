@@ -59,14 +59,16 @@ body {
 }
 
 .imagem-post {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 420px;
+    max-height: 420px;
     margin-top: 10px;
 }
 
 .conteudo p {
     margin-top: 30px;
     margin-bottom: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .conteudo span {

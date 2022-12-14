@@ -60,7 +60,7 @@
             <?php foreach ($posts->reverse() as $post):  ?>
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-4 imagem">
                             <img src="../../../public/img/<?= $post->imagem ?>" class="img-fluid rounded-start new-img" alt="...">
                         </div>
                         <div class="col-md-8">
