@@ -6,7 +6,6 @@
 }
 
 .button-pag {
-    background-color: green;
     display: flex;
     height: 35px;
     margin-top: -10%;
@@ -17,7 +16,6 @@
 }
 
 .button-pag-next {
-    background-color: green;
     display: flex;
     height: 35px;
     margin-top: -14%;
@@ -28,7 +26,7 @@
 }
 
 .but-num {
-    background-color: aqua;
     margin-top: -30%;
     height: 35px;
+    padding-bottom: 40px;
 }
