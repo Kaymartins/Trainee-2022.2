@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="../../../public/css/lista_de_postagens.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../../public/css/sidebar.css">
-    <link rel="stylesheet" href="../../../public/css/pagination.css">
 </head>
 
 <body>

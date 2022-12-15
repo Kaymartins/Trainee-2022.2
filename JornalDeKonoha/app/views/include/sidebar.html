@@ -3,7 +3,7 @@
 
 <body>
   <div class="botaosidebar">
-    <a class="btn d-flex justify-content-center" data-bs-toggle="offcanvas" href="#offcanvasExample" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    <a class="btn d-flex justify-content-center sidebar-a" data-bs-toggle="offcanvas" href="#offcanvasExample" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample">
       <i class="bi bi-play-fill"></i>
     </a>
   </div>
@@ -13,12 +13,12 @@
       <button style="color: aliceblue;" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <ul>
-        <a href="dashboard"><li><i class="bi bi-speedometer icon"></i>Dashboard</li></a>
-        <a href="posts"><li><i class="bi bi-pencil-fill icon"></i>Posts</li></a>
-        <a href="users"><li><i class="bi bi-person-fill icon"></i>Usuários</li></a>
+      <ul class="sidebar-ul">
+        <a href="dashboard" class="sidebar-a"><li class="sidebar-li"><i class="bi bi-speedometer icon"></i>Dashboard</li></a>
+        <a href="posts" class="sidebar-a"><li class="sidebar-li"><i class="bi bi-pencil-fill icon"></i>Posts</li></a>
+        <a href="users" class="sidebar-a"><li class="sidebar-li"><i class="bi bi-person-fill icon"></i>Usuários</li></a>
         <div class="user">        
-          <a style="text-decoration: none;" href="logout"><li><i class="bi bi-power icon"></i>Logout</li></a>
+          <a style="text-decoration: none;" href="logout" class="sidebar-a"><li class="sidebar-li"><i class="bi bi-power icon"></i>Logout</li></a>
           <p>
             <?= $_SESSION['logado']->name;
             ?>

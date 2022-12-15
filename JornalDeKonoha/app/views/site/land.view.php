@@ -75,7 +75,7 @@
                 </div>
                 <?php endforeach ?>
                 
-                <div class="container-lg d-flex justify-content-end">
+                <!--<div class="container-lg d-flex justify-content-end">
                     <div class="area-botao">   
                         <a class="maisantigas" href='listaposts'>
                             <div class="navigation loading animated fadeIn">   
@@ -86,9 +86,11 @@
                             </div>
                         </a>
                     </div>    
-                </div>  
+                </div> --> 
+                <a href="listaposts"><button type="button" class="btn btn-primary btn-lg btn-block w-100">Mais Antigas >>></button></a>
             </div>
-        </div>  
+        </div>
+          
         <?php require './app/views/include/footer.html'?>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
