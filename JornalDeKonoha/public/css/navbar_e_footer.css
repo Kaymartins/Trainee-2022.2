@@ -3,6 +3,10 @@
     src: url(../font/njnaruto.ttf) format("truetype");
 }
 
+body{
+    background-color: #272226;
+}
+
 .navcor {
     background-color:#EB6D43 ;
 }

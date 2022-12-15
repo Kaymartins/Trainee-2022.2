@@ -13,14 +13,14 @@ class TestController extends Controller
             return redirect('login');
             exit();
         }
-        */
+        **/
     }
 
     //retorna pagina principal
     public function index()
     {
         //$exemplo = App\Models\Exemplo::all();
-        return view('site/land');
+        return view('site/visualizacao_post');
     }
 
     public function posts()

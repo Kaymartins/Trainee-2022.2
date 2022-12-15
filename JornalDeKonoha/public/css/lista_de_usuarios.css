@@ -1,11 +1,21 @@
 
 body {
-    padding: 5%;
-    background-color: #F0F0F0;
+    background-color: #272226;
 }
 
 .titulo {
+    margin-top: 55px;
     color: #EB6D43;
+}
+
+.formulario {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    width: 300px;
+    height: auto;
 }
 
 .but-add {
@@ -19,21 +29,33 @@ body {
 
 .barra-guia {
     background-color: #1F6EC9;
-    color: #F0F0F0;
+    color: #f0f0f0;
 }
 
 .col-num {
     width: 12%;
+    color: #F0F0F0;
 }
 
 .col-nome {
     width: 70%;
+    color: #F0F0F0;
+}
+
+.linhas:hover {
+    background-color: #333032;
 }
 
 .botao {
     display: flex;
     gap: 5px;
     margin-left: 20%;
+}
+
+.botoes {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
 }
 
 .fade-modal{
@@ -49,12 +71,12 @@ body {
 
 .modal-p{
     position: fixed;
-    width: 900px;
+    width: 310px;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    
+    transition: 0.5s;
 }
 
 .modal-head{
@@ -63,7 +85,8 @@ body {
 
 .modal-corpo{
     border-radius: 10px;
-    background-color: #F0F0F0;
+    background-color: #31d0e6;
+    
 }
 
 .hide{
@@ -71,6 +94,30 @@ body {
     top:0;
     pointer-events: none;
 }
+
+.modal-editar {
+    background-color: #f0f0f0;
+}
+
+.buttons-editar {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    flex-direction: row-reverse;
+}
+
+.texto-exclusao {
+    display: flex;
+    flex-grow: 1;
+}
+
+.buttons-deletar {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    flex-direction: row-reverse;
+}
+
 @media (max-width: 1024px) {
     
     .titulo {
@@ -125,6 +172,10 @@ body {
 }
 
 @media (max-width: 280px){
+
+    .modal-p {
+        width: 270px;
+    }
 
     #modalSee {
         width: 270px;

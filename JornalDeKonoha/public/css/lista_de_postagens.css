@@ -1,10 +1,10 @@
 
 body {
-    padding: 5%;
-    background-color: #F0F0F0;
+    background-color: #272226;
 }
 
 .titulo {
+    margin-top: 55px;
     color: #EB6D43;
 }
 
@@ -24,14 +24,21 @@ body {
 
 .col-data {
     width: 8%;
+    color: #F0F0F0;
 }
 
 .col-post {
     width: 52%;
+    color: #F0F0F0;
 }
 
 .col-autor{
-    width: 18%
+    width: 18%;
+    color: #F0F0F0;
+}
+
+.linhas:hover {
+    background-color: #333032;
 }
 
 .botao {
@@ -92,6 +99,7 @@ img {
     display: flex;
     width: 50%;
     height: 100%;
+    max-width: 250px;
 }
 
 .imagem {
@@ -102,13 +110,14 @@ img {
 }
 
 .modal-excluir {
-    width: 40%;
+    width: 285px;
 }
 
 .texto-exclusao {
     display: flex;
     flex-grow: 1;
 }
+
 
 @media (max-width: 1200px) {
     
@@ -140,12 +149,20 @@ img {
 
     img {
         width: 40%;
+        max-height: 200px;
+    }
+
+    .modal-excluir {
+        width: 285px;
     }
 }
 
 @media (max-width: 900px) {
     img {
         width: 50%;
+        max-height: 150px;
     }
-
+    input {
+        height: 35px;
+    }
 }

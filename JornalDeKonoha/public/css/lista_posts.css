@@ -45,10 +45,12 @@
     flex-grow: 1;
     justify-content: center;
     padding: 0.1%;
+    max-height: 250px;
 }
 
 .card-texto {
     text-align: justify;
+    height: 100%;
 }
 
 .card-horizontal span {
@@ -56,10 +58,15 @@
 }
 
 .mais{
+    display: flex;
     text-decoration: none;
     color: #1F6EC9;
     font-family: 'Naruto';
     -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+a:hover{
+    text-shadow: 5px 5px 5px black;
 }
 
 .cards-ver {
@@ -68,6 +75,7 @@
 
 .cards-hor {
     width: fit-content;
+    width: 100%;
 }
 
 

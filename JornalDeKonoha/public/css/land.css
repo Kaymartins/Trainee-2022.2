@@ -5,8 +5,8 @@ html {
 body{
     background: #272226;
 }
-a
-{
+
+a {
     text-decoration: none;
 }
 
@@ -16,6 +16,7 @@ a
     font-family: 'MyFamily';
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
 .maisantigas    {
     text-decoration: none;
     color: #1F6EC9;
@@ -63,6 +64,13 @@ a
     bottom:150px;
     width: 800px;
 }
+
+.titulo-landingpage {
+    color: #EB6D43;
+    margin-bottom: 40px;
+    margin-left: 1%;
+}
+
 .carrossel-caption h1{
     background-color: #272226f3;
     text-align: left;
@@ -89,19 +97,26 @@ a
 .cards img{
     width: 250px;
     height: 150px;
-
 }
 
 .new-img{
-    width: 300px;
+    width: 350px;
     height: 100%;
+    max-height: 260px;
+}
 
+.imagem {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0.1%;
 }
 
 .new-card{
     background-color: rgb(230, 230, 230);
+    margin-left: 12.5%;
+    width: 75%;
 }
-
 
 .nome-cred{
     font-weight: bold;
@@ -111,6 +126,7 @@ a
 .area-botao{
     width: 40%;
 }
+
 .cards p{
     height: 100px;
     
@@ -123,9 +139,15 @@ a
     flex-direction: column;
 }
 
-
 a:hover{
     text-shadow: 5px 5px 5px black;
+}
+
+.button-mais-antigo {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 12.5%;
+    width: 75%;
 }
 
 .bg{
