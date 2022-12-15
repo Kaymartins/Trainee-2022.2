@@ -23,7 +23,7 @@
     <div class="main-login">
 
         <div class="left-login">
-            <h1>Faça login para acessar o Jornal de Konoha</h1>
+            <h1 class="titulo-login">Faça login para acessar o Jornal de Konoha</h1>
             <img src="../../../public/img/logo_jornal_de_konoha.png" class="left-login-img" alt="logo-jornal">
         </div>
 

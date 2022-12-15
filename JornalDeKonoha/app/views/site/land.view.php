@@ -68,26 +68,16 @@
                             <h4 class="card-title"><b><?= $post->titulo ?></b></h4>
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred"><?= $post->autor ?> -  <?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                             <p class="card-text"><?= $post->subtitulo ?></p>
-                            <a class="mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
+                            <a class="mais button-leia-mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <?php endforeach ?>
                 
-                <!--<div class="container-lg d-flex justify-content-end">
-                    <div class="area-botao">   
-                        <a class="maisantigas" href='listaposts'>
-                            <div class="navigation loading animated fadeIn">   
-                                <ul>
-                                    <li>Mais antigas >></li>
-                                    <div class="bg"></div>
-                                </ul>  
-                            </div>
-                        </a>
-                    </div>    
-                </div> --> 
-                <a href="listaposts"><button type="button" class="btn btn-primary btn-lg btn-block w-100">Mais Antigas >>></button></a>
+                <div class="button-mais-antigo">
+                    <a href="listaposts"><button type="button" class="btn btn-primary btn-lg btn-block w-100">Mais Antigas >>></button></a>
+                </div>
             </div>
         </div>
           
