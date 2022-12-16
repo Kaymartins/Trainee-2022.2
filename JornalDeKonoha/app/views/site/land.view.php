@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../../../public/css/navbar_e_footer.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome!</title>
+        <title>Jornal de Konoha</title>
     </head>
     <body>
         <?php require './app/views/include/navbar.html'?>
