@@ -32,10 +32,10 @@
                         <img src="../../../public/img/carr3.jpg" class="d-block w-100 img-carrossel" alt="post1">
                     </div></a>
                     <a href="#2"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/carr2.jpg" class="d-block w-100 img-carrossel" alt="post2">
+                        <img src="../../../public/img/carr1.png" class="d-block w-100 img-carrossel" alt="post2">
                     </div></a>
                     <a href="#3"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/carr1.png" class="d-block w-100 img-carrossel" alt="post3">
+                        <img src="../../../public/img/carr6.jpg" class="d-block w-100 img-carrossel" alt="post3">
                     </div></a>
                     <a href="#4"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/carr4.png" class="d-block w-100 img-carrossel" alt="post4">
