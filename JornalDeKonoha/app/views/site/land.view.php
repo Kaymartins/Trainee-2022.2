@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../../../public/css/navbar_e_footer.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome!</title>
+        <title>Jornal de Konoha</title>
     </head>
     <body>
         <?php require './app/views/include/navbar.html'?>
@@ -57,7 +57,10 @@
         </div>
         <div style="margin-top: 40px;" class="container-lg">
             <h2 class="titulo-landingpage"> Mais recentes </h2>
-            <?php foreach ($posts->reverse() as $post):  ?>
+            <?php $cont = 0; ?>
+            <?php foreach ($posts->reverse() as $post):  
+                if($cont < 5){ ?>
+
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
                         <div class="col-md-4 imagem">
@@ -69,6 +72,7 @@
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred"><?= $post->autor ?> -  <?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                             <p class="card-text"><?= $post->subtitulo ?></p>
                             <a class="mais button-leia-mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
+                            <?php $cont++; } ?>
                             </div>
                         </div>
                     </div>
