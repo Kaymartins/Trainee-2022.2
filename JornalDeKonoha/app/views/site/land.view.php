@@ -29,19 +29,19 @@
                 </div>
                 <div class="carousel-inner carrossel-inner">
                     <a href="#1"><div  class="carousel-item carrossel-item active">
-                        <img src="../../../public/img/tgc.jpg" class="d-block w-100 img-carrossel" alt="post1">
+                        <img src="../../../public/img/carr3.jpg" class="d-block w-100 img-carrossel" alt="post1">
                     </div></a>
                     <a href="#2"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/bofuri.jpg" class="d-block w-100 img-carrossel" alt="post2">
+                        <img src="../../../public/img/carr2.jpg" class="d-block w-100 img-carrossel" alt="post2">
                     </div></a>
                     <a href="#3"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/fumetsu.jpg" class="d-block w-100 img-carrossel" alt="post3">
+                        <img src="../../../public/img/carr1.png" class="d-block w-100 img-carrossel" alt="post3">
                     </div></a>
                     <a href="#4"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/hoshikuzu.jpg" class="d-block w-100 img-carrossel" alt="post4">
+                        <img src="../../../public/img/carr4.png" class="d-block w-100 img-carrossel" alt="post4">
                     </div></a>
                     <a href="#5"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/blcl.jpg" class="d-block w-100 img-carrossel" alt="post5">
+                        <img src="../../../public/img/carr5.png" class="d-block w-100 img-carrossel" alt="post5">
                     </div></a>
                 </div>
                 <button class="carousel-control-prev ctrl" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
