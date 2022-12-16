@@ -32,10 +32,10 @@
                         <img src="../../../public/img/carr3.jpg" class="d-block w-100 img-carrossel" alt="post1">
                     </div></a>
                     <a href="#2"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/carr2.jpg" class="d-block w-100 img-carrossel" alt="post2">
+                        <img src="../../../public/img/carr1.png" class="d-block w-100 img-carrossel" alt="post2">
                     </div></a>
                     <a href="#3"><div class="carousel-item carrossel-item">
-                        <img src="../../../public/img/carr1.png" class="d-block w-100 img-carrossel" alt="post3">
+                        <img src="../../../public/img/carr6.jpg" class="d-block w-100 img-carrossel" alt="post3">
                     </div></a>
                     <a href="#4"><div class="carousel-item carrossel-item">
                         <img src="../../../public/img/carr4.png" class="d-block w-100 img-carrossel" alt="post4">
@@ -57,7 +57,10 @@
         </div>
         <div style="margin-top: 40px;" class="container-lg">
             <h2 class="titulo-landingpage"> Mais recentes </h2>
-            <?php foreach ($posts->reverse() as $post):  ?>
+            <?php $cont = 0; ?>
+            <?php foreach ($posts->reverse() as $post):  
+                if($cont < 5){ ?>
+
                 <div class="card mb-3 new-card" >
                     <div class="row g-0">
                         <div class="col-md-4 imagem">
@@ -69,6 +72,7 @@
                             <p class="card-text"><small class="text-muted">Publicado por: <span class="nome-cred"><?= $post->autor ?> -  <?= date('d/m/Y',strtotime($post->date)) ?></span></small></p>
                             <p class="card-text"><?= $post->subtitulo ?></p>
                             <a class="mais button-leia-mais" href="visualizacao_post?id=<?= $post->id ?>">Leia Mais >>></a>
+                            <?php $cont++; } ?>
                             </div>
                         </div>
                     </div>
